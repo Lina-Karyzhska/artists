@@ -48,14 +48,8 @@
 }
 
 .artists {
-  padding-top: 2.5vw;
-
   &__img {
     width: 39%;
-  }
-
-  &__title {
-    padding-bottom: 3vw;
   }
 
   &__card {
@@ -124,12 +118,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 7vw;
-  padding-top: 2.5vw;
 
   &__title {
     width: 60%;
     margin: auto;
-    margin-bottom: 3vw;
   }
 }
 
@@ -202,44 +194,6 @@
       &__tags {
         margin-left: -1.5vw;
       }
-    }
-  }
-}
-
-.credentials {
-  text-align: center;
-  padding: 7vw 0 4vw 0;
-
-  &__logo {
-    width: 20%;
-  }
-
-  &__text {
-    font-style: italic;
-    font-size: 2.4vw;
-    padding: 2.5vw 0 7vw 0;
-  }
-
-  &__wrapper {
-    width: 55%;
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-  }
-
-  &__link_wr {
-    display: flex;
-    align-items: center;
-
-    svg {
-      margin-right: 1vw;
-    }
-
-    a {
-      font-family: "Neris Light", arial;
-      text-transform: uppercase;
-      font-size: 1.2vw;
-      letter-spacing: 2px;
     }
   }
 }

@@ -1,0 +1,184 @@
+.about-us {
+  &__wrapper {
+    width: 80%;
+    margin: auto;
+    background-color: #f1f0f0;
+    padding: 7vw;
+  }
+
+  &__text {
+    font-size: 1.3vw;
+
+    &:not(:last-child) {
+      padding-bottom: 2vw;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    margin-bottom: -10px;
+  }
+
+  &__media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6vw 0 10vw 0;
+  }
+
+  &__link {
+    font-size: 1vw;
+    margin: 0 0.5vw;
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__copytext {
+    opacity: 0;
+    height: 0px;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    z-index: -1;
+  }
+
+  &__hint {
+    position: absolute;
+    right: 23vw;
+    font-size: 1.3vw;
+    background: #333333;
+    color: #fff;
+    border-radius: 1.5em;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    transition: opacity 0.5s;
+
+    &_show {
+      height: 2vw;
+      width: auto;
+      padding: 0.5em 1em;
+      padding: 0 1em 0.2em;
+      opacity: 1;
+    }
+  }
+}
+
+.form {
+  &__title {
+    text-align: center;
+
+    span {
+      font-family: "Playfair Display", serif;
+      font-size: 2.5vw;
+      font-weight: 400;
+    }
+
+    &_wrapper {
+      width: 100%;
+      background-color: #f4f4f4;
+      padding-top: 5vw;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 1.7vw 0;
+  }
+
+  &__wrapper {
+    background-color: #6f6f6f;
+    position: relative;
+
+    & > div {
+      width: 32%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    * {
+      font-family: "Neris SemiBold", arial;
+    }
+  }
+
+  &__inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5vw;
+
+    input {
+      width: 45%;
+      text-align: center;
+      background-color: #6f6f6f;
+      padding: 0.5vw 0 0.6vw 0;
+      margin-top: 2.3vw;
+      font-size: 1.3vw;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        color: #000;
+        font-size: 0.9vw;
+      }
+    }
+  }
+
+  &__btn {
+    border: none;
+    font-size: 0.9vw;
+    padding: 1vw;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__police {
+    color: #fff;
+    font-size: 0.7vw;
+    text-align: center;
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 2vw;
+
+    &_man {
+      width: 7.5%;
+      left: 26.5%;
+    }
+
+    &_lady {
+      width: 8.7%;
+      right: 26.3%;
+    }
+  }
+
+  &__info {
+    width: 32%;
+    margin: auto;
+    padding-top: 2vw;
+
+    p {
+      font-size: 0.7vw;
+      font-family: "Neris SemiBold", arial;
+      color: #6f6f6f;
+
+      &:not(:last-child) {
+        padding-bottom: 0.7vw;
+      }
+    }
+  }
+}
