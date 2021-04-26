@@ -1,0 +1,31 @@
+.nav {
+  width: 75%;
+  display: flex;
+  padding-bottom: 3vw;
+
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &__list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style-type: none;
+    font-size: 1.5vw;
+  }
+
+  &__item {
+    padding: 10px 1.5vw;
+    &:not(:last-child) {
+      border-right: 1px solid black;
+    }
+  }
+
+  &__link {
+    color: black;
+  }
+}

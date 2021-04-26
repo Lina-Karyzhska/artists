@@ -1,0 +1,245 @@
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &__title {
+    font-size: 3vw;
+    font-weight: 400;
+
+    span {
+      font-style: italic;
+    }
+  }
+
+  &__wrapper {
+    width: 50%;
+    height: 80%;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__text {
+    font-size: 1.5vw;
+    height: 50%;
+    width: 80%;
+    overflow-y: auto;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+  }
+
+  &__link {
+    margin-left: 6.5vw;
+  }
+}
+
+.artists {
+  padding-top: 2.5vw;
+
+  &__img {
+    width: 39%;
+  }
+
+  &__title {
+    padding-bottom: 3vw;
+  }
+
+  &__card {
+    width: 57% !important;
+    margin: auto;
+    position: relative;
+    display: flex !important;
+    justify-content: space-between;
+    left: 8.5vw;
+    margin-bottom: 11vw;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 55%;
+  }
+
+  &__name {
+    font-size: 1.7vw;
+    font-style: italic;
+    font-weight: 600;
+    padding-top: 2vw;
+  }
+
+  &__subtitle {
+    padding-bottom: 1vw;
+    color: #606060;
+  }
+
+  &__text {
+    font-size: 1.3vw;
+    line-height: 1;
+  }
+
+  &__tags {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__tag {
+    font-size: 1.1vw;
+
+    &:nth-child(2) {
+      margin-left: 1vw;
+      margin-right: 5vw;
+    }
+
+    &:nth-child(3) {
+      margin-top: 1vw;
+    }
+  }
+
+  .slick-dots {
+    button {
+      background-color: #c4c5c1;
+    }
+  }
+}
+
+.exhibitions {
+  background-image: url("../images/exhibitions.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 7vw;
+  padding-top: 2.5vw;
+
+  &__title {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 3vw;
+  }
+}
+
+.poster {
+  display: flex;
+  width: 78%;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+
+  &:not(:last-child) {
+    margin-bottom: 6vw;
+  }
+
+  &__description {
+    width: 55%;
+    padding: 5.5vw;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__tags {
+    width: 100%;
+    margin-left: -1.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__tag {
+    font-size: 2vw;
+    font-family: "Playfair Display", serif;
+  }
+
+  &__info {
+    font-size: 2.3vw;
+
+    span {
+      font-style: italic;
+      font-size: 2.3vw;
+    }
+  }
+
+  &__title {
+    font-size: 4vw;
+    padding: 1.7vw 0;
+  }
+
+  &__text {
+    padding-bottom: 2vw;
+    font-size: 1.3vw;
+    line-height: 1.1;
+  }
+
+  &__img {
+    width: 45%;
+  }
+
+  &_left {
+    flex-direction: row-reverse;
+
+    .poster {
+      &__description {
+        padding-left: 0;
+        padding-right: 5.5vw;
+      }
+
+      &__tags {
+        margin-left: -1.5vw;
+      }
+    }
+  }
+}
+
+.credentials {
+  text-align: center;
+  padding: 7vw 0 4vw 0;
+
+  &__logo {
+    width: 20%;
+  }
+
+  &__text {
+    font-style: italic;
+    font-size: 2.4vw;
+    padding: 2.5vw 0 7vw 0;
+  }
+
+  &__wrapper {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  &__link_wr {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 1vw;
+    }
+
+    a {
+      font-family: "Neris Light", arial;
+      text-transform: uppercase;
+      font-size: 1.2vw;
+      letter-spacing: 2px;
+    }
+  }
+}

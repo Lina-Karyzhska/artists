@@ -1,0 +1,50 @@
+.slider {
+  width: 100%;
+  &__img {
+    width: 100%;
+  }
+
+  &__number {
+    position: absolute;
+    font-size: 18vw;
+    font-weight: 900;
+    left: -23vw;
+    line-height: 1;
+    bottom: -1.3vw;
+    color: #e6e6e6;
+  }
+}
+
+.slick {
+  &-track {
+    width: 100%;
+  }
+  &-dots {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+    position: absolute;
+    bottom: 1.5vw;
+    left: 50%;
+    transform: translateX(-50%);
+
+    button {
+      cursor: pointer;
+      background: #fff;
+      border: none;
+      border-radius: 50%;
+      font-size: 0;
+      height: 0.9vw;
+      width: 0.9vw;
+      margin: 0.4vw;
+      outline: none;
+      opacity: 0.75;
+    }
+
+    &-active button {
+      opacity: 1;
+    }
+  }
+}
