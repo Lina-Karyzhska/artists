@@ -1,0 +1,32 @@
+.work_card {
+  padding: 3vw 1.5vw;
+
+  &__preview {
+    width: 100%;
+  }
+
+  &__info {
+    background-color: #f1f0f0;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 4vw;
+    position: relative;
+  }
+
+  &__date {
+    font-family: "Neris SemiBold", arial;
+    padding: 1vw 0;
+    font-size: 1vw;
+  }
+
+  &__name {
+    letter-spacing: 2px;
+  }
+
+  &__link {
+    position: absolute;
+    bottom: -1.3vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

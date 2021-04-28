@@ -1,0 +1,63 @@
+.exhibitions {
+  &_preview {
+    background-image: url("../images/exhibitions.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 7vw;
+  }
+
+  &__title {
+    width: 60%;
+    margin: auto;
+  }
+
+  &__text {
+    line-height: 1.1;
+    font-size: 1.3vw;
+    width: 75%;
+    margin: auto;
+    padding-bottom: 1.8vw;
+  }
+
+  &__slider {
+    margin: -3vw 0 -4.5vw 0;
+
+    .slick-dots {
+      bottom: 6vw;
+    }
+  }
+
+  .media {
+    margin: 4vw 0 2.7vw;
+  }
+
+  &__info {
+    font-style: italic;
+    text-align: center;
+    font-size: 1vw;
+  }
+
+  &__works_slider {
+    width: 83%;
+    margin: auto;
+
+    .slick-arrow {
+      background: transparent;
+      border: none;
+      position: absolute;
+      top: 32%;
+      width: 2vw;
+      cursor: pointer;
+    }
+
+    .next {
+      right: -5vw;
+      transform: rotate(180deg);
+    }
+
+    .prev {
+      left: -5vw;
+    }
+  }
+}

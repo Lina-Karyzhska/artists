@@ -2,11 +2,7 @@
   width: 75%;
   display: flex;
   padding-bottom: 2vw;
-
-  position: absolute;
-  bottom: 5px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: auto;
 
   &__list {
     width: 100%;

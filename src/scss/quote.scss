@@ -1,0 +1,70 @@
+.quote {
+  color: #ff0000;
+  font-style: italic;
+  position: relative;
+  padding: 8vw 0;
+  margin-bottom: 3vw;
+
+  &__beginning {
+    font-size: 10vw;
+    letter-spacing: -0.6vw;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-65%);
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      border-bottom: 0.17vw solid black;
+      position: absolute;
+      top: 4.8vw;
+      width: 27vw;
+    }
+
+    &::before {
+      left: -27vw;
+    }
+
+    &::after {
+      right: -29vw;
+    }
+  }
+
+  &__text {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-size: 2.4vw;
+  }
+
+  &__author {
+    color: #fff;
+    display: block;
+    background-color: #000;
+    padding: 0.6vw 1vw;
+    position: absolute;
+    bottom: 2.5vw;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      border-bottom: 0.15vw solid black;
+      position: absolute;
+      top: 1.7vw;
+      width: 22vw;
+    }
+
+    &::before {
+      left: -22vw;
+    }
+
+    &::after {
+      right: -22vw;
+    }
+  }
+}

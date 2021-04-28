@@ -30,7 +30,7 @@
     <section class="about-us">
       <h1 class="title">ПРО НАС</h1>
 
-      <div class="about-us__wrapper">
+      <div class="paper">
         <p class="about-us__text">
           Перед дивовижними картинами Олексія Потапенка просто завмираєш. Це
           відчуття причетності до справжнього мистецтва триває, поки перебуваєш
@@ -91,7 +91,7 @@
         </p>
       </div>
       <img src="images/about_us/about_us.png" alt="pic" class="about-us__img" />
-      <div class="about-us__wrapper">
+      <div class="paper">
         <p class="about-us__text">
           Перед дивовижними картинами Олексія Потапенка просто завмираєш. Це
           відчуття причетності до справжнього мистецтва триває, поки перебуваєш
@@ -142,65 +142,11 @@
         </p>
       </div>
 
-      <div class="about-us__media">
-        <a href="" class="about-us__link tag">FACEBOOL</a>
-        <a href="" class="about-us__link tag">TWITTER</a>
-        <a href="" class="about-us__link tag">PINTEREST</a>
-        <a class="about-us__link tag copy">
-          <input class="about-us__copytext" type="text" value="" />
-          COPY LINK
-        </a>
-        <div class="about-us__hint">link copied</div>
-      </div>
+      @@include('_media.html')
     </section>
 
-    <section class="form">
-      <div class="form__title_wrapper">
-        <h3 class="form__title">
-          <span class="tag">Sign Up for Our Newsletter!</span>
-        </h3>
-        <p class="form__text">ОСТАННІ НОВИНИ МИСТЕЦТВА</p>
-      </div>
-      <form class="form__wrapper">
-        <img
-          src="images/about_us/man.png"
-          alt="man"
-          class="form__img form__img_man"
-        />
-        <div>
-          <div class="form__inputs">
-            <input class="tag" type="text" placeholder="ІМ'Я" />
-            <input class="tag" type="email" placeholder="E-MAIL" />
-          </div>
-
-          <button type="submit" class="link form__btn">SUBSCRIBE</button>
-          <a href="" class="form__police">PRIVACY POLICE</a>
-        </div>
-        <img
-          src="images/about_us/lady.png"
-          alt="lady"
-          class="form__img form__img_lady"
-        />
-      </form>
-
-      <div class="form__info">
-        <p>
-          Our newsletter is sent every two weeks, and features a digest of our
-          new content, always headed by our latest essay. Outside of this rhythm
-          you’ll also get the very occasional additional email (around 5 or so a
-          year) to let you know of any important news or exciting developments
-          we have to share. Simply add your details to the form above and click
-          the link you receive via email to confirm your subscription!
-        </p>
-        <p>
-          We won’t share your details with anybody else — see our Privacy Policy
-          — and you can unsubscribe at any time by clicking on the provided link
-          at the bottom of our emails.
-        </p>
-      </div>
-    </section>
-
-    @@include('_credentials.html') @@include('_footer.html')
+    @@include('_form.html') @@include('_credentials.html')
+    @@include('_footer.html')
 
     <script src="js/main.min.js"></script>
   </body>

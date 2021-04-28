@@ -50,6 +50,7 @@
 .artists {
   &__img {
     width: 39%;
+    height: 39%;
   }
 
   &__card {
@@ -108,92 +109,6 @@
   .slick-dots {
     button {
       background-color: #c4c5c1;
-    }
-  }
-}
-
-.exhibitions {
-  background-image: url("../images/exhibitions.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 7vw;
-
-  &__title {
-    width: 60%;
-    margin: auto;
-  }
-}
-
-.poster {
-  display: flex;
-  width: 78%;
-  margin: auto;
-  background-color: #fff;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
-
-  &:not(:last-child) {
-    margin-bottom: 6vw;
-  }
-
-  &__description {
-    width: 55%;
-    padding: 5.5vw;
-    padding-right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  &__tags {
-    width: 100%;
-    margin-left: -1.5vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__tag {
-    font-size: 2vw;
-    font-family: "Playfair Display", serif;
-  }
-
-  &__info {
-    font-size: 2.3vw;
-
-    span {
-      font-style: italic;
-      font-size: 2.3vw;
-    }
-  }
-
-  &__title {
-    font-size: 4vw;
-    padding: 1.7vw 0;
-  }
-
-  &__text {
-    padding-bottom: 2vw;
-    font-size: 1.3vw;
-    line-height: 1.1;
-  }
-
-  &__img {
-    width: 45%;
-  }
-
-  &_left {
-    flex-direction: row-reverse;
-
-    .poster {
-      &__description {
-        padding-left: 0;
-        padding-right: 5.5vw;
-      }
-
-      &__tags {
-        margin-left: -1.5vw;
-      }
     }
   }
 }

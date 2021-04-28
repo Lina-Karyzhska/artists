@@ -26,7 +26,7 @@
   </head>
   <body>
     <header class="header">
-  <img class="header__background" src="images/header.png" alt="background" />
+  <img src="images/logo.png" alt="logo" class="header__logo" />
   <nav class="nav">
     <ul class="nav__list">
       <li class="nav__item">
@@ -42,7 +42,7 @@
         <a class="nav__link" href="#">НОВИНИ ТА ПОДІЇ</a>
       </li>
       <li class="nav__item">
-        <a class="nav__link" href="#">ВИСТАВКИ</a>
+        <a class="nav__link" href="./exhibitions.html">ВИСТАВКИ</a>
       </li>
       <li class="nav__item">
         <a class="nav__link" href="#">КОНТАКТИ</a>
@@ -202,9 +202,9 @@
         </div>
       </section>
 
-      <section class="exhibitions">
+      <section class="exhibitions_preview">
         <h1 class="exhibitions__title title">ЗАПРОШУЄМО ВІДВІДАТИ</h1>
-        <div class="exhibitions__poster poster">
+        <div class="poster">
           <div class="poster__description">
             <div class="poster__tags">
               <span class="poster__tag tag">art-exhibition</span>
@@ -229,7 +229,7 @@
           <img src="images/poster1.png" alt="poster" class="poster__img" />
         </div>
 
-        <div class="exhibitions__poster poster poster_left">
+        <div class="poster poster_left">
           <div class="poster__description">
             <div class="poster__tags">
               <span class="poster__tag tag">art-exhibition</span>
@@ -255,7 +255,52 @@
         </div>
       </section>
 
-      <section class="credentials">
+      <section class="form">
+  <div class="form__title_wrapper">
+    <h3 class="form__title">
+      <span class="tag">Sign Up for Our Newsletter!</span>
+    </h3>
+    <p class="form__text">ОСТАННІ НОВИНИ МИСТЕЦТВА</p>
+  </div>
+  <form class="form__wrapper">
+    <img
+      src="images/about_us/man.png"
+      alt="man"
+      class="form__img form__img_man"
+    />
+    <div>
+      <div class="form__inputs">
+        <input class="tag" type="text" placeholder="ІМ'Я" />
+        <input class="tag" type="email" placeholder="E-MAIL" />
+      </div>
+
+      <button type="submit" class="link form__btn">SUBSCRIBE</button>
+      <a href="" class="form__police">PRIVACY POLICE</a>
+    </div>
+    <img
+      src="images/about_us/lady.png"
+      alt="lady"
+      class="form__img form__img_lady"
+    />
+  </form>
+
+  <div class="form__info">
+    <p>
+      Our newsletter is sent every two weeks, and features a digest of our new
+      content, always headed by our latest essay. Outside of this rhythm you’ll
+      also get the very occasional additional email (around 5 or so a year) to
+      let you know of any important news or exciting developments we have to
+      share. Simply add your details to the form above and click the link you
+      receive via email to confirm your subscription!
+    </p>
+    <p>
+      We won’t share your details with anybody else — see our Privacy Policy —
+      and you can unsubscribe at any time by clicking on the provided link at
+      the bottom of our emails.
+    </p>
+  </div>
+</section>
+ <section class="credentials">
   <img src="images/logo.png" alt="logo" class="credentials__logo" />
   <p class="credentials__text">Про Україну через мистецтво!</p>
 
@@ -316,7 +361,8 @@
     </div>
   </div>
 </section>
- <footer class="footer">
+
+      <footer class="footer">
   <img class="footer__background" src="images/footer.png" alt="background" />
   <nav class="footer__nav">
     <ul class="footer__nav-list">
@@ -333,7 +379,7 @@
         <a class="footer__link" href="#">НОВИНИ ТА ПОДІЇ</a>
       </li>
       <li class="footer__item">
-        <a class="footer__link" href="#">ВИСТАВКИ</a>
+        <a class="footer__link" href="./exhibitions.html">ВИСТАВКИ</a>
       </li>
       <li class="footer__item">
         <a class="footer__link" href="#">КОНТАКТИ</a>
