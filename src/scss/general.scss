@@ -8,6 +8,7 @@
 
 html {
   // font-size: 38.5px;
+  overflow-y: scroll;
 }
 
 body,
@@ -20,6 +21,7 @@ html {
 main,
 section {
   width: 100%;
+  overflow: hidden;
 }
 
 h1,
@@ -64,6 +66,14 @@ a {
   padding: 7vw;
   position: relative;
   z-index: 1;
+
+  &__text {
+    font-size: 1.3vw;
+
+    &:not(:last-child) {
+      padding-bottom: 1.8vw;
+    }
+  }
 }
 
 .first-letter:first-letter {

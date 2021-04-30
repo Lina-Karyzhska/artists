@@ -1,0 +1,351 @@
+.artist {
+  &__num {
+    font-family: "Neris Light", arial;
+    padding: 0.7vw 1.4vw;
+    top: 2.5vw;
+    bottom: auto;
+
+    &::after,
+    &::before {
+      width: 34vw;
+    }
+
+    &::before {
+      left: -34vw;
+    }
+
+    &::after {
+      right: -34vw;
+    }
+  }
+
+  &__general {
+    margin: 5vw 0;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__photo {
+    width: 36%;
+    margin-left: -15%;
+    margin-right: 3vw;
+  }
+
+  &__name {
+    font-weight: 900;
+    font-size: 7vw;
+    margin-top: -2.4vw;
+  }
+
+  &__style {
+    color: #606060;
+    padding-bottom: 1.2vw;
+
+    span {
+      font-size: 1.37vw;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.8vw;
+  }
+
+  &__part {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__sideBar {
+    margin-left: -2vw;
+    * {
+      font-family: "Neris SemiBold", arial;
+      font-size: 1.2vw;
+      display: block;
+    }
+
+    &_block {
+      margin-bottom: 2.5vw;
+    }
+
+    &_title {
+      color: #dd000a;
+    }
+  }
+
+  &__biography {
+    width: 74.5%;
+  }
+
+  &__anchor {
+    margin-top: 1.1vw;
+  }
+}
+
+.gallery {
+  &__slider {
+    width: 80%;
+    margin: auto;
+
+    &_wrapper {
+      width: 100%;
+      padding: 5vw 0;
+      background-color: #282828;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .slick-arrow {
+      background: transparent;
+      border: none;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 2vw;
+      cursor: pointer;
+    }
+
+    .next {
+      right: -6vw;
+      transform: translateY(-50%) rotate(180deg);
+    }
+
+    .prev {
+      left: -6vw;
+    }
+
+    &_capture {
+      width: 80%;
+      margin: auto;
+      padding: 2vw 0;
+    }
+
+    &_description {
+      width: 50% !important;
+    }
+
+    &_name {
+      font-weight: 600;
+      font-size: 4.3vw;
+      letter-spacing: 0.25vw;
+      line-height: 1.1;
+    }
+
+    &_subtitle {
+      font-family: "Neris SemiBold", arial;
+      letter-spacing: 0.2vw;
+    }
+
+    &_text {
+      font-family: "Neris Light", arial;
+      font-size: 1.1vw;
+      padding-top: 1vw;
+    }
+  }
+
+  &__years {
+    padding: 0.7vw 10vw;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+
+    * {
+      transition: 0.3s linear;
+    }
+
+    input {
+      display: none;
+
+      &:checked + label {
+        border-color: #ff0000;
+
+        span {
+          background-color: #ff0000;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    font-family: "Neris SemiBold", arial;
+    border: 0.3vw solid transparent;
+    color: #f1eff0;
+    cursor: pointer;
+    padding: 0.1vw 0.6vw 0.3vw 0.6vw;
+    line-height: 1;
+    transition: 0.3s linear;
+    position: relative;
+    display: block;
+
+    span {
+      position: absolute;
+      display: block;
+    }
+
+    .rectangle {
+      width: 0.3vw;
+      height: 1vw;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -1.3vw;
+    }
+
+    .circle {
+      width: 0.9vw;
+      height: 0.9vw;
+      border-radius: 50%;
+      bottom: -0.28vw;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__wrapper {
+    display: none;
+
+    &_show {
+      display: block;
+    }
+  }
+
+  &__filter {
+    background-color: #282828;
+    text-align: center;
+    padding: 1.8vw 0 0.8vw 0;
+    margin-top: 0.29vw;
+
+    * {
+      font-size: 0.9vw;
+      color: #f3f1f2;
+      font-family: "Neris SemiBold", arial;
+      letter-spacing: 0.1vw;
+    }
+
+    &_wrapper {
+      display: flex;
+      justify-content: center;
+      padding-top: 0.3vw;
+    }
+
+    &_category {
+      margin: 2vw;
+
+      label {
+        width: 10vw;
+        border-color: #bbb8b8;
+        padding: 0.8vw 0;
+      }
+
+      input {
+        display: none;
+
+        &:checked + label {
+          border-color: #ff0000;
+        }
+      }
+    }
+  }
+
+  &__showcase {
+    width: 82%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+
+    .work_card {
+      width: 33.33%;
+    }
+  }
+
+  &__pagination {
+    background-color: #050708;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 1vw 0;
+
+    &_num {
+      font-family: "Neris SemiBold", arial;
+      font-size: 1.2vw;
+      margin: 0 0.7vw;
+    }
+
+    &_arrow {
+      width: 1vw;
+      height: 3vw;
+      position: relative;
+      top: 0.1vw;
+      margin: 0 2vw;
+      cursor: pointer;
+    }
+
+    &_next {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.projects {
+  &__slider {
+    margin-bottom: -4.5vw;
+  }
+  &__title {
+    color: #fff;
+    background-color: #282828;
+    margin-bottom: 0.1vw;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .slick-dots {
+    bottom: 6.5vw;
+  }
+
+  &__capture {
+    height: 35vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 5vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+
+    &_place {
+      font-style: italic;
+      padding-bottom: 0.8vw;
+      font-size: 1.2vw;
+    }
+
+    &_info {
+      font-style: italic;
+      width: 100%;
+      font-size: 1.2vw;
+    }
+
+    &_name {
+      font-family: "Neris SemiBold", arial;
+      font-size: 4.2vw;
+      margin-bottom: 1.5vw;
+    }
+  }
+
+  &__scroll {
+    height: 80%;
+    width: 60%;
+  }
+
+  .mCSB_scrollTools {
+    left: 1vw;
+  }
+
+  .media {
+    margin: 7vw 0;
+  }
+}

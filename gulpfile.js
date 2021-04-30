@@ -21,6 +21,7 @@ function styles() {
     return src([
         'node_modules/slick-slider/slick/slick.scss',
         'src/scss/jquery.mCustomScrollbar.css',
+        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
         "src/scss/**/*.scss"
     ])
         .pipe(sourcemaps.init())
@@ -40,6 +41,7 @@ function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
         'node_modules/slick-slider/slick/slick.min.js',
+        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
         'src/js/*.js'
     ])
         .pipe(concat('main.min.js')) 

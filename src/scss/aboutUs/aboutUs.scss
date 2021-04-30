@@ -1,12 +1,4 @@
 .about-us {
-  &__text {
-    font-size: 1.3vw;
-
-    &:not(:last-child) {
-      padding-bottom: 2vw;
-    }
-  }
-
   &__img {
     width: 100%;
     display: block;
