@@ -74,6 +74,11 @@ a {
       padding-bottom: 1.8vw;
     }
   }
+
+  &__part {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .first-letter:first-letter {
