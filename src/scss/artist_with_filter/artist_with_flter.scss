@@ -49,31 +49,6 @@
   &__subtitle {
     font-size: 1.8vw;
   }
-
-  &__sideBar {
-    margin-left: -2vw;
-    * {
-      font-family: "Neris SemiBold", arial;
-      font-size: 1.2vw;
-      display: block;
-    }
-
-    &_block {
-      margin-bottom: 2.5vw;
-    }
-
-    &_title {
-      color: #dd000a;
-    }
-  }
-
-  &__biography {
-    width: 74.5%;
-  }
-
-  &__anchor {
-    margin-top: 1.1vw;
-  }
 }
 
 .gallery {
