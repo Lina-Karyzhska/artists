@@ -8,7 +8,8 @@ const scss         = require("gulp-sass"),
       sourcemaps   = require("gulp-sourcemaps"),
       browserSync  = require("browser-sync").create(),
       del          = require("del"),
-      fileinclude  = require("gulp-file-include");
+      fileinclude  = require("gulp-file-include"),
+      imgCompress  = require('imagemin-jpeg-recompress');
 
 function html() {
     return src(['src/*.html', "!src/_*.html"])
@@ -51,18 +52,18 @@ function scripts() {
 };
 
 function imgs() {
-    return src("src/images/**/*.{jpg,png,svg,gif,ico,webp}")
-        // .pipe(imagemin([
-        //     imagemin.gifsicle({interlaced: true}),
-        //     imagemin.mozjpeg({quality: 75, progressive: true}),
-        //     imagemin.optipng({optimizationLevel: 5}),
-        //     imagemin.svgo({
-        //         plugins: [
-        //             {removeViewBox: true},
-        //             {cleanupIDs: false}
-        //         ]
-        //     })
-        // ]))
+    return src("src/images/**/*")
+        .pipe(imagemin([
+          imgCompress({
+            loops: 4,
+            min: 70,
+            max: 80,
+            quality: 'high'
+          }),
+          imagemin.gifsicle(),
+          imagemin.optipng(),
+          imagemin.svgo()
+        ]))
         .pipe(dest("./dist/images"))
         .pipe(browserSync.stream());
 };
