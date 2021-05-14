@@ -77,6 +77,12 @@ function sync() {
     });
 };
 
+function fonts() {
+    return src("src/fonts/**/*")
+        .pipe(dest("./dist/fonts"))
+        .pipe(browserSync.stream());
+};
+
 function cleanDist() {
     return del('dist');
 }
@@ -93,7 +99,8 @@ exports.watching = watching;
 exports.browserSync = sync;
 exports.scripts = scripts;
 exports.imgs = imgs;
+exports.fonts = fonts;
 exports.cleanDist = cleanDist;
 
-const build = series(cleanDist, parallel(html, styles, imgs, scripts));
+const build = series(cleanDist, parallel(html, styles, imgs, fonts, scripts));
 exports.default = parallel(build, sync, watching);
