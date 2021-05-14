@@ -6,11 +6,12 @@
   align-items: flex-start;
 
   &__title {
-    font-size: 3vw;
+    font-size: 3em;
     font-weight: 400;
 
     span {
       font-style: italic;
+      font-size: inherit;
     }
   }
 
@@ -30,7 +31,7 @@
   }
 
   &__text {
-    font-size: 1.5vw;
+    font-size: 1.16rem;
     height: 50%;
     width: 80%;
     overflow-y: auto;
@@ -54,7 +55,7 @@
   }
 
   &__card {
-    width: 57% !important;
+    width: 40rem !important;
     margin: auto;
     position: relative;
     display: flex !important;
@@ -66,39 +67,37 @@
   &__info {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-end;
     width: 55%;
   }
 
   &__name {
-    font-size: 1.7vw;
+    font-size: 1.5rem;
     font-style: italic;
     font-weight: 600;
-    padding-top: 2vw;
   }
 
   &__subtitle {
     padding-bottom: 1vw;
     color: #606060;
+    font-size: 1.16rem;
   }
 
   &__text {
-    font-size: 1.3vw;
+    font-size: 1rem;
     line-height: 1;
   }
 
   &__tags {
-    margin-top: auto;
+    margin-top: 2vw;
     display: flex;
     flex-wrap: wrap;
   }
 
   &__tag {
-    font-size: 1.1vw;
-
     &:nth-child(2) {
       margin-left: 1vw;
-      margin-right: 5vw;
+      margin-right: 8vw;
     }
 
     &:nth-child(3) {

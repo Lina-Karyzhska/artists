@@ -6,7 +6,7 @@
   margin-bottom: 3vw;
 
   &__beginning {
-    font-size: 10vw;
+    font-size: 10em;
     letter-spacing: -0.6vw;
     position: absolute;
     top: 0;
@@ -42,24 +42,22 @@
       right: 8vw;
 
       &::before {
-        width: 60vw;
-        left: -60.2vw;
+        width: calc(60vw - 2px);
+        right: 100%;
       }
     }
   }
 
   &__text {
-    width: 59%;
-    margin: auto;
-    font-size: 2.4vw;
+    font-size: 2rem;
     margin-right: 10vw;
     letter-spacing: 0.1vw;
 
     &_center {
-      width: 60%;
+      width: 30rem;
 
       text-align: center;
-      margin-right: auto;
+      margin: auto;
     }
   }
 
@@ -70,6 +68,7 @@
     padding: 0.6vw 1vw;
     position: absolute;
     bottom: 2.5vw;
+    font-size: 1.16rem;
 
     &::before,
     &::after {
@@ -77,7 +76,7 @@
       display: block;
       border-bottom: 0.15vw solid black;
       position: absolute;
-      top: 1.7vw;
+      top: 50%;
     }
 
     &_center {
@@ -99,11 +98,11 @@
     }
 
     &_left {
-      left: 23vw;
+      left: 6vw;
 
       &::after {
-        width: 80vw;
-        right: -80vw;
+        width: calc(40vw - 2px);
+        left: 100%;
       }
     }
   }

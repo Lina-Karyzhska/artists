@@ -13,7 +13,7 @@
 
   &__description {
     width: 53%;
-    padding: 5vw;
+    padding: 5vw 0 0 5vw;
     padding-right: 0;
     display: flex;
     flex-direction: column;
@@ -29,27 +29,27 @@
   }
 
   &__tag {
-    font-size: 2vw;
+    font-size: 2em;
     font-family: "Playfair Display", serif;
   }
 
   &__info {
-    font-size: 2.3vw;
+    font-size: 2.3em;
 
     span {
       font-style: italic;
-      font-size: 2.3vw;
+      font-size: inherit;
     }
   }
 
   &__title {
-    font-size: 4vw;
+    font-size: 4em;
     padding: 1.7vw 0;
   }
 
   &__text {
     padding-bottom: 2vw;
-    font-size: 1.4vw;
+    font-size: 1rem;
     line-height: 1.25;
   }
 
@@ -84,5 +84,11 @@
     .poster__description {
       padding-left: 19vw;
     }
+  }
+}
+
+@media (max-width: 1440px) {
+  .poster__description {
+    padding: 3vw 0 0 5vw;
   }
 }
