@@ -8,7 +8,7 @@
       margin-left: -2vw;
       color: #8a8a8a;
       font-weight: 600;
-      font-size: 1vw;
+      font-size: 0.83rem;
       font-family: "Neris SemiBold", arial;
     }
   }
@@ -27,9 +27,9 @@
     top: 50%;
     left: 7%;
     transform: translateY(-50%);
+    font-size: 4em;
 
     * {
-      font-size: 4vw;
       padding: 0 1vw;
       background-color: #fff;
       position: relative;
@@ -58,56 +58,77 @@
   }
 }
 
-.art-fair {
+.event {
   width: 80%;
   margin: auto;
   display: flex;
   justify-content: space-between;
-  padding: 2.95vw 0 8.63vw;
-
-  &__image {
-    display: block;
-    width: 50.19vw;
-  }
-
-  &__henry-ford {
-    position: relative;
-  }
+  margin: 2.95vw auto 8.63vw;
+  position: relative;
 
   &__info {
-    position: absolute;
-    top: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: space-between;
-    padding: 2.74vw 2.85vw 2.29vw 3.87vw;
+    padding: 2.3vw 3vw 2vw 3.7vw;
     color: #fff;
+    width: 66%;
+
+    &_wrapper {
+      width: 72%;
+    }
+
+    &_art {
+      background-image: url("../images/news_and_events/henry_ford.png");
+    }
+
+    &_poetry {
+      background-image: url("../images/news_and_events/poetry.png");
+      display: block;
+    }
   }
 
-  &__paragraph {
-    width: 72.32%;
+  &__title {
+    font-size: 4em;
 
-    h2 {
-      font-size: 4vw;
-
-      &:nth-of-type(2) {
-        font-weight: 900;
-      }
+    &:nth-of-type(2) {
+      font-weight: 900;
     }
   }
 
   &__text {
-    font-size: 1.2vw;
+    font-size: 1.3em;
     padding-top: 1vw;
   }
 
-  &__btn {
-    margin-top: auto;
-    padding-bottom: 0.5vw;
+  &__link {
+    &_bottom {
+      margin-top: auto;
+      padding-bottom: 0.5vw;
+    }
+
+    &_aside {
+      position: absolute;
+      left: -4vw;
+      top: 6vw;
+    }
   }
 
-  .ford {
+  &__photo {
     display: block;
-    width: 23.77vw;
+    width: 31%;
+    height: 31%;
+  }
+
+  &_reverse {
+    flex-direction: row-reverse;
+    margin: 8.63vw auto 5vw;
+
+    .event__text {
+      width: 72%;
+    }
   }
 }
 
@@ -129,10 +150,10 @@
 
   &__info {
     width: 50%;
-    padding: 7.93vw 13.52vw 6.5vw 2.17vw;
+    padding: 6vw 11vw 6.5vw 2.17vw;
 
     h2 {
-      font-size: 4vw;
+      font-size: 4em;
 
       &:nth-of-type(2) {
         font-weight: 900;
@@ -141,7 +162,7 @@
   }
 
   &__text {
-    font-size: 1.2vw;
+    font-size: 1rem;
     padding-top: 0.5vw;
   }
 
@@ -150,59 +171,8 @@
   }
 }
 
-.about-poetry {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  padding: 9.11vw 0 4vw;
-
-  &__image {
-    display: block;
-    width: 50vw;
-  }
-
-  &__main-img {
-    position: relative;
-  }
-
-  &__info {
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 3.38vw 12.38vw 2.1vw 3.62vw;
-    color: #fff;
-  }
-
-  &__paragraph {
-    h2 {
-      font-size: 4vw;
-
-      &:nth-of-type(2) {
-        font-weight: 900;
-      }
-    }
-  }
-
-  &__text {
-    font-size: 1.2vw;
-    width: 30.23vw;
-    padding-top: 1vw;
-  }
-
-  &__jadan {
-    position: relative;
-  }
-
-  &__jadan-img {
-    display: block;
-    width: 23.75vw;
-  }
-
-  &__btn {
-    position: absolute;
-    top: 2.97vw;
-    left: -3.5vw;
+@media (max-width: 1440px) {
+  .burning-man__info {
+    padding: 4vw 9vw 5vw 2vw;
   }
 }

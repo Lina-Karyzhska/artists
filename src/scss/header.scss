@@ -22,6 +22,7 @@
 .footer {
   width: 100%;
   position: relative;
+  font-size: 1rem;
 
   &__background {
     width: 100%;
@@ -29,7 +30,7 @@
   }
 
   &__nav {
-    width: 55%;
+    width: 45rem;
     position: absolute;
     top: 9vw;
     left: 50%;
@@ -46,7 +47,6 @@
   &__link {
     color: #fff;
     font-family: "Neris Light", arial;
-    font-size: 1.1vw;
     opacity: 0.6;
     letter-spacing: 2px;
 
@@ -60,6 +60,5 @@
     opacity: 0.6;
     text-align: center;
     padding-top: 3vw;
-    font-size: 1.3vw;
   }
 }
