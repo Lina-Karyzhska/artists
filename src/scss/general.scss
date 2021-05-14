@@ -67,11 +67,18 @@ a {
   color: #fff;
   font-family: "Neris SemiBold", arial;
   font-size: 1.1vw;
+  transition: background-color 0.2s;
+
+  @media (hover) {
+    &:hover {
+      background-color: #ae1b1b;
+    }
+  }
 }
 
 .title {
   text-align: center;
-  font-size: 5.5em;
+  font-size: 4em;
   letter-spacing: 0.4vw;
   padding: 3vw 0;
 }
