@@ -11,11 +11,11 @@
   padding-top: 2vw;
 
   &__logo {
-    width: 10vw;
-    height: 10vw;
+    width: 7vw;
+    // height: 10vw; //я б не вказувала взагалі висоту. т.я. малюнок буде автоматично масштабуватись відштовхуючись від ширини
     display: block;
     margin: auto;
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
   }
 }
 
