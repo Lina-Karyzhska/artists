@@ -12,7 +12,8 @@
 
   &__copytext {
     opacity: 0;
-    height: 0px;
+    height: 0;
+    width: 0;
     position: absolute;
     top: 100%;
     left: 100%;
@@ -49,4 +50,10 @@
 
 .paper .media__hint {
   right: 15vw;
+}
+
+@media (max-width: 800px) {
+  .media {
+    justify-content: space-between;
+  }
 }

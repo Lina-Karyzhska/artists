@@ -1,5 +1,6 @@
 .poster {
   display: flex;
+  justify-content: space-between;
   width: 78%;
   margin: auto;
   background-color: #fff;
@@ -48,15 +49,18 @@
   }
 
   &__text {
-    padding-bottom: 2vw;
     font-size: 1rem;
     line-height: 1.25;
   }
 
   &__img {
-    width: 47%;
-    height: 47%;
+    width: 37%;
+    height: 37%;
     display: block;
+
+    &_mobile {
+      display: none;
+    }
   }
 
   &_left {
@@ -90,5 +94,97 @@
 @media (max-width: 1440px) {
   .poster__description {
     padding: 3vw 0 0 5vw;
+  }
+}
+
+@media (max-width: 1440px) {
+  .poster__description {
+    padding: 3vw 0 0 5vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .poster {
+    &__description {
+      width: auto;
+      padding: 2vw 0 0 5vw;
+    }
+
+    &__img {
+      margin-left: 3rem;
+    }
+
+    &__title {
+      padding: 0.5rem 0;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .poster {
+    flex-direction: column-reverse;
+    width: 80%;
+    padding-bottom: 30px;
+
+    &_big {
+      .poster__description {
+        padding: 0;
+      }
+
+      &.poster {
+        border-bottom-right-radius: 95px;
+        margin-bottom: -95px;
+      }
+    }
+
+    &__description {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: -16vw;
+      z-index: 1;
+    }
+
+    &__img {
+      display: none;
+
+      &_mobile {
+        display: block;
+      }
+    }
+
+    &__tags {
+      margin: 0;
+      flex-direction: column;
+      width: 100%;
+      align-items: start;
+    }
+
+    &__tag {
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: 400;
+      text-align: center;
+      width: 150px;
+      padding: 1vw 0;
+      background-color: #fff;
+    }
+
+    &__info {
+      font-size: 1rem;
+      font-style: normal;
+      border: 1px solid black;
+      width: 150px;
+      text-align: center;
+      padding: 1vw 0;
+      background-color: #fff;
+
+      span {
+        font-style: normal;
+      }
+    }
+  }
+
+  .mobile {
+    display: none;
   }
 }

@@ -11,8 +11,8 @@
   padding-top: 2vw;
 
   &__logo {
-    width: 7vw;
-    // height: 10vw; //я б не вказувала взагалі висоту. т.я. малюнок буде автоматично масштабуватись відштовхуючись від ширини
+    width: 12vw;
+    height: 12vw;
     display: block;
     margin: auto;
     margin-bottom: 1vw;
@@ -60,5 +60,139 @@
     opacity: 0.6;
     text-align: center;
     padding-top: 3vw;
+  }
+}
+
+.burger {
+  display: none;
+
+  &__logo,
+  &__credentials-text,
+  &__credentials-link-wr {
+    display: none;
+  }
+}
+
+.nav__item-news {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  body {
+    &._lock {
+      overflow: hidden;
+    }
+
+    .header {
+      flex-direction: row;
+    }
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    background-image: none;
+    padding: 1.66vw 5.74vw 0.77vw;
+    margin-bottom: 0;
+
+    &__logo {
+      width: 24.16vw;
+      height: 24.72vw;
+    }
+  }
+
+  .burger {
+    z-index: 5;
+    display: block;
+    position: absolute;
+    width: 9vw;
+    height: 5.83vw;
+    cursor: pointer;
+
+    &__logo,
+    &__credentials-text,
+    &__credentials-link-wr {
+      display: block;
+      align-self: center;
+    }
+
+    &__logo {
+      height: 47.68vw;
+      padding: 6.85vw 0 7.4vw;
+    }
+
+    &__credentials-text {
+      font-size: 3.33vw;
+      text-align: center;
+      padding: 9.62vw 0 3.24vw;
+    }
+
+    &__credentials-link-wr {
+      display: flex;
+      align-items: center;
+      padding-bottom: 3vw;
+      svg {
+        width: 5vw;
+        height: 5vw;
+      }
+
+      a {
+        font-size: 3.29vw;
+      }
+    }
+
+    span,
+    &::before,
+    &::after {
+      right: 0;
+      position: absolute;
+      height: 0.97vw;
+      width: 100%;
+      transition: all 0.3s ease 0s;
+      background-color: #000;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    span {
+      top: 50%;
+      transform: scale(1) translate(0, -50%);
+    }
+
+    &._active {
+      right: 5vw;
+
+      span {
+        transform: scale(0) translate(0, -50%);
+      }
+
+      &::before {
+        top: 50%;
+        transform: rotate(-90deg);
+      }
+
+      &::after {
+        bottom: 44%;
+        transform: rotate(0deg) translate(0, 50%);
+      }
+    }
+  }
+
+  .footer {
+    font-size: 0.7rem;
+
+    &__nav {
+      width: 85%;
+    }
   }
 }

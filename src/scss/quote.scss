@@ -21,7 +21,7 @@
     }
 
     &_center {
-      left: 50%;
+      left: 49%;
       transform: translateX(-65%);
 
       &::after,
@@ -113,5 +113,58 @@
     right: -14vw;
     bottom: 3.3vw;
     z-index: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  .quote {
+    &__text {
+      font-size: 1.5rem;
+
+      &_center {
+        width: 66vw;
+        padding: 3vw 0;
+      }
+    }
+
+    &__beginning_center::after,
+    &__beginning_center::before {
+      width: 31.5vw;
+    }
+
+    &__beginning {
+      font-size: 13em;
+
+      &_center {
+        &::after {
+          right: -34vw;
+        }
+
+        &::before {
+          left: -31.5vw;
+        }
+      }
+
+      &::after, &::before {
+        top: 5.8vw;
+      }
+    }
+
+    &__author {
+      font-size: 0.9rem;
+
+      &_center::before,
+      &_center::after {
+        width: 26vw;
+      }
+
+      &_center::after {
+        right: -26vw;
+      }
+
+      &_center::before {
+        left: -26vw;
+      }
+    }
   }
 }

@@ -1,5 +1,4 @@
 .form {
-
   &__container {
     width: 100%;
     max-width: 30em;
@@ -36,7 +35,6 @@
     background-color: #6f6f6f;
     position: relative;
     font-family: "Neris SemiBold", arial;
-
   }
 
   &__inputs {
@@ -100,20 +98,18 @@
   &__img {
     position: absolute;
     bottom: -1vw;
+    height: 20em;
 
     &_man {
-      height: 20em;
       left: -8.3em;
     }
 
     &_lady {
-      height: 20em;
       right: -8.3em;
     }
   }
 
   &__info {
-    width: 51%;
     margin: auto;
     padding-top: 2vw;
     text-transform: uppercase;
@@ -125,6 +121,36 @@
 
       &:not(:last-child) {
         padding-bottom: 0.7vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .form {
+    &__container {
+      max-width: 64em;
+    }
+
+    &__title {
+      font-size: 4.7em;
+      padding: 0.2em;
+      border-width: 1px;
+    }
+
+    &__text {
+      font-size: 3.7em;
+    }
+
+    &__img {
+      height: 32em;
+
+      &_lady {
+        right: -13.3em;
+      }
+
+      &_man {
+        left: -12.3em;
       }
     }
   }

@@ -4,21 +4,21 @@
 // }
 
 @font-face {
-  font-family: 'Neris';
+  font-family: "Neris";
   font-style: normal;
   font-weight: 700;
-  src: local('Neris SemiBold'), local('Neris-SemiBold'),
-    url(../fonts/neris-semibold.woff) format('woff'),
-    url(../fonts/neris-semibold.ttf) format('truetype');
+  src: local("Neris SemiBold"), local("Neris-SemiBold"),
+    url(../fonts/neris-semibold.woff) format("woff"),
+    url(../fonts/neris-semibold.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'Neris';
+  font-family: "Neris";
   font-style: normal;
   font-weight: 400;
-  src: local('Neris SemiBold'), local('Neris-SemiBold'),
-    url(../fonts/neris-light.woff) format('woff'),
-    url(../fonts/neris-light.ttf) format('truetype');
+  src: local("Neris SemiBold"), local("Neris-SemiBold"),
+    url(../fonts/neris-light.woff) format("woff"),
+    url(../fonts/neris-light.ttf) format("truetype");
 }
 
 * {
@@ -66,7 +66,7 @@ a {
   padding: 0.6vw 1.2vw;
   color: #fff;
   font-family: "Neris SemiBold", arial;
-  font-size: 1.1vw;
+  font-size: 0.8rem;
   transition: background-color 0.2s;
 
   @media (hover) {
@@ -159,4 +159,44 @@ a {
   color: #ff0000;
   margin-right: -0.8vw;
   margin-left: -0.9vw;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: calc(4px + 1vw);
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: calc(5px + 1vw);
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 14px;
+  }
+
+  .paper {
+    padding: 4vw;
+    z-index: 0;
+  }
+
+  .tag {
+    padding: 1vw 3vw;
+    border-width: 1px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .paper__sideBar {
+    padding-left: 2vw;
+  }
+
+  .link {
+    padding: 1vw 3vw;
+  }
 }
