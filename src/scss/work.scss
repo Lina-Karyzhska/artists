@@ -1,6 +1,9 @@
 .work {
   &_card {
     width: 30%;
+    height: 100%;
+    display: flex !important;
+    flex-direction: column;
   }
 
   &_preview {

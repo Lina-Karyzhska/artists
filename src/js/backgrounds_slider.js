@@ -17,7 +17,7 @@ $(function() {
             scrollType:"stepped"
         },
 		keyboard: {scrollType:"stepped"},
-		mouseWheel: {scrollAmount:10},
+		mouseWheel: {scrollAmount:70},
 		theme: "rounded-dark",
         scrollInertia:400
 	});
@@ -77,7 +77,7 @@ $(function() {
             scrollType:"stepped"
         },
 		keyboard: {scrollType:"stepped"},
-		mouseWheel: {scrollAmount:10},
+		mouseWheel: {scrollAmount:70},
 		theme: "rounded-dark",
         scrollInertia:400
 	});

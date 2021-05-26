@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   position: relative;
-  z-index: 1;
+  z-index: 9;
   margin-bottom: -5px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   background-image: url("../images/header.png");
@@ -27,6 +27,8 @@
   &__background {
     width: 100%;
     display: block;
+    object-fit: cover;
+    min-height: 15rem;
   }
 
   &__nav {
@@ -36,12 +38,28 @@
     left: 50%;
     transform: translateX(-50%);
 
+    @media (max-width: 800px) {
+      top: 1.5rem;
+    }
+
     &-list {
       width: 100%;
       display: flex;
       justify-content: space-between;
       list-style-type: none;
+
+      @media (max-width: 800px) {
+        flex-direction: column;
+        width: 10em;
+        margin: 0 auto;
+      }
     }
+
+
+  }
+
+  &__item {
+    margin: 0.5em 0;
   }
 
   &__link {
@@ -49,6 +67,7 @@
     font-family: "Neris Light", arial;
     opacity: 0.6;
     letter-spacing: 2px;
+    white-space: nowrap;
 
     &:hover {
       opacity: 1;
@@ -87,11 +106,12 @@
       flex-direction: row;
     }
   }
+
   .header {
     display: flex;
     align-items: center;
     background-image: none;
-    padding: 1.66vw 5.74vw 0.77vw;
+    padding: 1.66vw 10% 0.77vw;
     margin-bottom: 0;
 
     &__logo {
@@ -120,6 +140,12 @@
       padding: 6.85vw 0 7.4vw;
     }
 
+    &__img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
     &__credentials-text {
       font-size: 3.33vw;
       text-align: center;
@@ -130,6 +156,7 @@
       display: flex;
       align-items: center;
       padding-bottom: 3vw;
+
       svg {
         width: 5vw;
         height: 5vw;

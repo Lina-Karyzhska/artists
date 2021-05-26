@@ -73,6 +73,7 @@
     letter-spacing: 1px;
     width: 100%;
     display: block;
+    font-size: 1rem;
 
     &:focus {
       outline: none;
@@ -119,6 +120,10 @@
       font-family: "Neris SemiBold", arial;
       color: #6f6f6f;
 
+      @media (max-width: 576px) {
+        font-size: 9px;
+      }
+
       &:not(:last-child) {
         padding-bottom: 0.7vw;
       }
@@ -139,7 +144,8 @@
     }
 
     &__text {
-      font-size: 3.7em;
+      font-size: 3.4em;
+      white-space: nowrap;
     }
 
     &__img {
