@@ -9,13 +9,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     list-style-type: none;
     font-size: 1.16rem;
   }
 
   &__item {
-    padding: 10px 1.5vw;
 
     &:not(:last-child) {
       border-right: 1px solid black;
@@ -25,6 +23,9 @@
   &__link {
     color: black;
     white-space: nowrap;
+    padding: 10px 1.5vw;
+    width: 100%;
+    display: inline-block
   }
 }
 
@@ -68,7 +69,7 @@
       &:active {
         background-color: #dd000a;
 
-        > a {
+        >a {
           color: #fff;
         }
       }
