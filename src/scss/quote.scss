@@ -145,7 +145,8 @@
         }
       }
 
-      &::after, &::before {
+      &::after,
+      &::before {
         top: 5.8vw;
       }
     }
@@ -166,5 +167,11 @@
         left: -26vw;
       }
     }
+  }
+}
+
+@media (max-width: 420px) {
+  .quote__img {
+    right: -8vw;
   }
 }

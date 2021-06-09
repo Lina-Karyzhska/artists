@@ -194,9 +194,24 @@ a {
 
   .paper__sideBar {
     padding-left: 2vw;
+    margin-left: -4vw;
   }
 
   .link {
     padding: 1vw 3vw;
+  }
+}
+
+@media (max-width: 420px) {
+  html {
+    font-size: 12px;
+  }
+
+  .paper {
+    width: 90%;
+
+    &__sideBar {
+      width: 25%;
+    }
   }
 }

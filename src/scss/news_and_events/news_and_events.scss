@@ -118,7 +118,7 @@
 
   &__photo {
     width: 31%;
-    
+
     &_img {
       width: 100%;
       height: 100%;
@@ -180,5 +180,76 @@
 @media (max-width: 1440px) {
   .burning-man__info {
     padding: 4vw 9vw 5vw 2vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .burning-man__text {
+    font-size: 0.833rem;
+    height: 30vw;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 420px) {
+  .burning-man {
+    &__david {
+      width: 59vw;
+      left: -10vw;
+    }
+
+    &__info {
+      padding: 4vw 2vw 5vw 2vw;
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        font-size: 8em;
+        text-align: right;
+
+        &:nth-of-type(2) {
+          position: relative;
+          left: -35px;
+          width: 120%;
+        }
+      }
+    }
+
+    &__btn {
+      align-self: flex-end;
+    }
+  }
+
+  .event {
+    width: 100%;
+    margin: 5vw 0;
+
+    &__title {
+      font-size: 8em;
+    }
+
+    &__photo {
+      display: none;
+    }
+
+    &__info {
+      width: 100%;
+      padding: 5vw 10vw;
+    }
+
+    &__text {
+      font-size: 1rem;
+    }
+
+    &_reverse .event__text {
+      width: 72%;
+    }
+
+    &__link_aside {
+      top: auto;
+      left: auto;
+      right: 10vw;
+      bottom: 5vw;
+    }
   }
 }

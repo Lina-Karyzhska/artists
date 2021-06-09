@@ -33,3 +33,9 @@
     transform: translateX(-50%);
   }
 }
+
+@media (max-width: 420px) {
+  .work_card__link {
+    bottom: -2.5vw;
+  }
+}

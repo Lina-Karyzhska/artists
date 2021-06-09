@@ -14,10 +14,7 @@
   }
 
   &__item {
-
-    &:not(:last-child) {
-      border-right: 1px solid black;
-    }
+    border-right: 1px solid black;
   }
 
   &__link {
@@ -25,7 +22,11 @@
     white-space: nowrap;
     padding: 10px 1.5vw;
     width: 100%;
-    display: inline-block
+    display: inline-block;
+  }
+
+  li:last-of-type {
+    border: none;
   }
 }
 
@@ -39,6 +40,10 @@
     background-color: #fff;
     transition: left 0.3s ease 0s;
     padding-bottom: 0;
+
+    li:last-of-type {
+      border: 0.1px solid rgb(78, 6, 6);
+    }
 
     &._active {
       left: 0;
@@ -69,7 +74,7 @@
       &:active {
         background-color: #dd000a;
 
-        >a {
+        > a {
           color: #fff;
         }
       }
