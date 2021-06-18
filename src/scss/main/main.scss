@@ -11,16 +11,19 @@
   .slick-list,
   .slick-track,
   .slick-slide,
-  .slick-slide>div {
+  .slick-slide > div {
     height: 100%;
   }
 
   &__title {
     font-size: 3em;
-    font-weight: 400;
+
+    @media (max-width: 800px) {
+      font-size: 4em;
+    }
 
     span {
-      font-style: italic;
+      font-family: "Playfair Display Italic", serif;
       font-size: inherit;
     }
   }
@@ -42,7 +45,6 @@
       width: 80%;
       padding-left: 0;
     }
-
   }
 
   &__text {
@@ -73,6 +75,13 @@
     padding-left: 14.4vw;
     text-align: left;
     margin: 0 auto;
+
+    @media (max-width: 800px) {
+      width: 100%;
+      padding-left: 0;
+      text-align: center;
+      font-size: 10em;
+    }
   }
 
   &__img {
@@ -120,8 +129,7 @@
 
   &__name {
     font-size: 1.5rem;
-    font-style: italic;
-    font-weight: 600;
+    font-family: "Playfair Display SemiBold Italic", serif;
   }
 
   &__subtitle {
@@ -140,33 +148,19 @@
     display: flex;
     flex-wrap: wrap;
     width: 80%;
-
   }
 
   &__tag {
     margin-top: 1vw;
     margin-right: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .slick-dots {
     button {
       background-color: #c4c5c1;
-    }
-  }
-}
-
-@media (max-width: 800px) {
-  .about__title {
-    font-size: 1.5rem;
-  }
-
-  .exhibitions_preview {
-    .link {
-      margin-top: 1.5rem;
-    }
-
-    .poster {
-      z-index: 0;
     }
   }
 }

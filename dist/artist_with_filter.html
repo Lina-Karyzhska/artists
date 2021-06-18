@@ -1,4 +1,3 @@
-    
 <!DOCTYPE html>
 <html lang="uk">
   <head>
@@ -6,17 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,600&display=swap"
-      rel="stylesheet"
-    />
-
     <link rel="stylesheet" href="css/styles.min.css" />
   </head>
   <body>
-
     <header class="header">
       <div class="burger">
         <span></span>
@@ -37,7 +28,9 @@
             <a class="nav__link" href="./artist_with_filter.html">ХУДОЖНИКИ</a>
           </li>
           <li class="nav__item nav__item-news-and-events">
-            <a class="nav__link" href="./news_and_events.html">НОВИНИ ТА ПОДІЇ</a>
+            <a class="nav__link" href="./news_and_events.html"
+              >НОВИНИ ТА ПОДІЇ</a
+            >
           </li>
           <li class="nav__item nav__item-news">
             <a class="nav__link" href="./news_and_events.html">НОВИНИ</a>
@@ -65,580 +58,540 @@
                 xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAFO0lEQVR4nO2dbYgWVRTHf86uWqmLVmhpSS8bIZW9WbZI0HtQEvQCBVkgRVEf6ksf9kNQFH0LiohKioKCqA8FZSxYqyAoJbYaREKFa22tklrqqmW5rXHi3GV29nlm5z5zZ+bOM/ODA7vPznPn3v/cO3PuuefOTqNY5gHnA5cClwALgPnAGcDpwMlau2PAH8AeYB/wG/A98DUwCOwtqhVFCHgDcBNwM7AEmJWyvL+BH4D1an3AmKO6ekMP8Kb2mhMZ28/Ae8Ct7SDcQ8CGHERrZgPAk6FbQWlYBewoULio7VYhZ/gu4I3ANo+Ei9ou4G4PdJrEbOAdj4WL2qfAmb6IdzvwS4nEM3YIWF20eM+UULiovV6UeB+0gXjGNgFdeQkn97utbSSeMfEfF2ctXldOznBRtl+nlpkwE9jZxuIZOwCcm4WAAxUQz9gwMMeleB9VSDxj37gS79kKimfs7bTiXV9h8YytihMoLh44TYOYc9NehTbgbODXRs3ojGnb+yUSTyLTW7SRErEeBQKgA5iu4axZaqcCd2j0OykfAitsKrSsBEPrL+BVYGkLgq9t4XwP2Jxgl+firdNh1SpftHDOQ0nPda/n4r2cQjhDf4vnfi5J4T6Hpt51IB4pBDwRfW4EkYLvA85yVEnXyG3lQQ/q8UTcH32ert3iUIQ0PfCgPtkncYXH4g06FC+tgGIrTUHhIfy440q65A3H5R1N+f1HzQ/hG+JtKQvNkj7LsiX0djmwSJ3nMe05qJOdNua3UlNP9psPejwevkctF8Yf03BU1vV6hNAQvivlFcmSYZ11JEHWpV8DFuZQr6vDv3zrcQ8csGjUxhzrNSQBl0AXiS50f4GcMWpR0Dk51kumkt0iYHczv6ZmSnqC6FguOXnnBS4PNDu0pjUWBerP1LTGglrAdMwNcvKZ0jDf4rt5p6x1deoaQZEM62yjo0EdxDvYblG3zZrf0uxhYj7vnmI9KCknyXEjBTvKy3K+eHN024SLuo8EBW11CJN0muaKeRpscEKgV6NI0u4TseUCh2UdD3TxvEpc5rCtxwLdPlUlznPY1sOBruRXCZd+70ER8PeKCegyA3WvCPidwwJ9R1yYixzWcU+gSTlFkuctZIZxfh2xtVO3iv7bZCaQB0t1y2qjmGSH+olJH3SL1cdrNBM5bpthlYDN5pCiM+9HY/5mM0KGYsoZc1xn2fTdaRaVPnd8ZWyJ6/2zLcqKW71zPeOSDLFRI+Anjgt3yRGLsmyOTYskdY4va/ZX0J1Ji+xcmJDa0V/KZhTDBg3DTRCwsF2LJWSNqXJYwI36NK6JR9yhzxoJKLxUizclLwJ/Njtoum62K9InTOMH5pEcP2EPXbQHSvd82un1ai/kOXE4SYv21T1wkv3TaB4d7YGG+yvRn+zotV3+WF/3wHHb0eyEzXqgcKdGaWrgnlYEHKmH8v/0xvXAJKyp8BBel1p+ZUsFBdyd5IRxQzjMdRVb/hSXZXmSA5MKKGH1K222fJacFbrp0pmAaA+8qs3jhuJ1XGuCpUmwEVD4UXOqh5xXvXiOaM/blEdN5F0KX7XRQ2RnzlskxsnDxclawLUu091aYXUGS4Z5CdhbpHBhluiOyrII+CVwTfay2POwvofPVwEP+NTrmiFR7ed1a7wvAkoY6hXgtHylSIfkIj8F/JSjgIOR70r27Qsl2MoRS6fuR/5Yk4iyEjAIfadPI0lt996vhXqffMsioSnpUutMLfvijNswgaK3OEiyo8yx5f0GkpomLwST+5QkFJ2i91OZVsl/gPAP4D9Y7bQo+fwp1wAAAABJRU5ErkJggg=="
               />
             </svg>
-    
+
             <a href="" class="credential__media">UkrainianMystery</a>
           </div>
         </ul>
       </nav>
     </header>
-    
+  </body>
+</html>
 
 
-    <main>
-      <section class="artist">
-        <h1 class="title">ХУДОЖНИКИ</h1>
+<main>
+  <section class="artist">
+    <h1 class="title">ХУДОЖНИКИ</h1>
 
-        <div class="paper">
-          <span class="quote__author artist__num quote__author_center">I</span>
+    <div class="paper">
+      <span class="quote__author artist__num quote__author_center">I</span>
 
-          <div class="artist__general">
-            <img
-              src="images/artists/potapenko.png"
-              alt="artist"
-              class="artist__photo"
-            />
-            <div class="artist__general_wrapper">
-              <h2 class="artist__name">Олексій Потапенко</h2>
-              <p class="artist__style">
-                <span>Живопис / </span><span>графіка /</span
-                ><span> скульптура</span>
-              </p>
-              <p class="artist__subtitle">
-                Життя сповнено мрією. Якийсь красивий підзаголовок. Декілька
-                речень про нього. Дуже коротко, проте дуже влучно. Декілька
-                речень про нього. Дуже стисло, проте дуже влучно. Якийсь
-                красивий підзаголовок.
-              </p>
-            </div>
-          </div>
-
-          <div class="artist__main">
-            <div class="paper__part">
-              <div class="paper__sideBar">
-                <div class="paper__sideBar_block">
-                  <h4 class="paper__sideBar_title">БІОГРАФІЯ</h4>
-                  <a href="" class="paper__anchor">ЮНІСТЬ</a>
-                  <a href="" class="paper__anchor">РАННЯ ТВОРЧІСТЬ</a>
-                  <a href="" class="paper__anchor">ВИЗНАННЯ</a>
-                </div>
-
-                <div class="paper__sideBar_block">
-                  <h4 class="paper__sideBar_title">ПРОЄКТИ</h4>
-                  <a href="" class="paper__anchor">EX-FLUXUS</a>
-                  <a href="" class="paper__anchor">LIGHT OF THE SUN</a>
-                  <a href="" class="paper__anchor">SKYFALL</a>
-                </div>
-
-                <div class="paper__sideBar_block">
-                  <a href="#gallery" class="paper__sideBar_title">ГАЛЕРЕЯ</a>
-                </div>
-              </div>
-
-              <div class="paper__biography">
-                <p class="paper__text">
-                  Перед дивовижними картинами Олексія Потапенка просто
-                  завмираєш. Це відчуття причетності до справжнього мистецтва
-                  триває, поки перебуваєш у створеному ним світі, сповнюючись
-                  позитивом від побаченого: гармонією кольорів, форм і задуму,
-                  які лишаться з тобою й надалі. Побачити дивовижну «Українську
-                  містерію» можна в Атріумі Національного музею Тараса Шевченка,
-                  де вперше в Києві відкрилася виставка чернігівського
-                  художника.
-                </p>
-
-                <p class="paper__text">
-                  Перед дивовижними картинами Олексія Потапенка просто
-                  завмираєш. Це відчуття причетності до справжнього мистецтва
-                  триває, поки перебуваєш у створеному ним світі, сповнюючись
-                  позитивом від побаченого: гармонією кольорів, форм і задуму,
-                  які лишаться з тобою й надалі. Побачити дивовижну «Українську
-                  містерію» можна в Атріумі Національного музею Тараса Шевченка,
-                  де вперше в Києві відкрилася виставка чернігівського
-                  художника. Перед дивовижними картинами Олексія Потапенка
-                  просто завмираєш. Це відчуття причетності до справжнього
-                  мистецтва триває, поки перебуваєш у створеному ним світі,
-                  сповнюючись позитивом від побаченого: гармонією кольорів, форм
-                  і задуму, які лишаться з тобою й надалі. Побачити дивовижну
-                  «Українську містерію» можна в Атріумі Національного музею
-                  Тараса Шевченка, де вперше в Києві відкрилася виставка
-                  чернігівського художника. Перед дивовижними картинами Олексія
-                  Потапенка просто завмираєш. Це відчуття причетності до
-                  справжнього мистецтва триває, поки перебуваєш у створеному ним
-                  світі, сповнюючись позитивом від побаченого: гармонією
-                  кольорів, форм і задуму, які лишаться з тобою й надалі.
-                  Побачити дивовижну «Українську містерію» можна в Атріумі
-                  Національного музею Тараса Шевченка, де вперше в Києві
-                  відкрилася виставка чернігівського художника.
-                </p>
-
-                <p class="paper__text">
-                  Перед дивовижними картинами Олексія Потапенка просто
-                  завмираєш. Це відчуття причетності до справжнього мистецтва
-                  триває, поки перебуваєш у створеному ним світі, сповнюючись
-                  позитивом від побаченого: гармонією кольорів, форм і задуму,
-                  які лишаться з тобою й надалі. Побачити дивовижну «Українську
-                  містерію» можна в Атріумі Національного музею Тараса Шевченка,
-                  де вперше в Києві відкрилася виставка чернігівського
-                  художника. Перед дивовижними картинами Олексія Потапенка
-                  просто завмираєш. Це відчуття причетності до справжнього
-                  мистецтва триває, поки перебуваєш у створеному ним світі,
-                  сповнюючись позитивом від побаченого: гармонією кольорів, форм
-                  і задуму, які лишаться з тобою й надалі. Побачити дивовижну
-                  «Українську містерію» можна в Атріумі Національного музею
-                  Тараса Шевченка, де вперше в Києві відкрилася виставка
-                  чернігівського художника.
-                </p>
-
-                <p class="paper__text">
-                  Перед дивовижними картинами Олексія Потапенка просто
-                  завмираєш. Це відчуття причетності до справжнього мистецтва
-                  триває, поки перебуваєш у створеному ним світі, сповнюючись
-                  позитивом від побаченого: гармонією кольорів, форм і задуму,
-                  які лишаться з тобою й надалі. Побачити дивовижну «Українську
-                  містерію» можна в Атріумі Національного музею Тараса Шевченка,
-                  де вперше в Києві відкрилася виставка чернігівського
-                  художника.
-                </p>
-
-                <div class="quote">
-                  <span class="quote__beginning quote__beginning_right"
-                    >‘‘</span
-                  >
-                  <p class="quote__text">
-                    Я вважаю, що його постать, як митця, як художника, - не може
-                    бути повною мірою зрозумілою нашим прийдешним поколінням.
-                  </p>
-                  <img
-                    src="images/artist_with_filter/calf.png"
-                    alt="calf"
-                    class="quote__img"
-                  />
-                  <span class="quote__author quote__author_left">
-                    Георгій Ла-Фонтьє
-                  </span>
-                </div>
-
-                <div class="artist__biography">
-                  <p class="paper__text">
-                    Перед дивовижними картинами Олексія Потапенка просто
-                    завмираєш. Це відчуття причетності до справжнього мистецтва
-                    триває, поки перебуваєш у створеному ним світі, сповнюючись
-                    позитивом від побаченого: гармонією кольорів, форм і задуму,
-                    які лишаться з тобою й надалі. Побачити дивовижну
-                    «Українську містерію» можна в Атріумі Національного музею
-                    Тараса Шевченка, де вперше в Києві відкрилася виставка
-                    чернігівського художника.
-                  </p>
-
-                  <p class="paper__text">
-                    Перед дивовижними картинами Олексія Потапенка просто
-                    завмираєш. Це відчуття причетності до справжнього мистецтва
-                    триває, поки перебуваєш у створеному ним світі, сповнюючись
-                    позитивом від побаченого: гармонією кольорів, форм і задуму,
-                    які лишаться з тобою й надалі. Побачити дивовижну
-                    «Українську містерію» можна в Атріумі Національного музею
-                    Тараса Шевченка, де вперше в Києві відкрилася виставка
-                    чернігівського художника. Перед дивовижними картинами
-                    Олексія Потапенка просто завмираєш. Це відчуття причетності
-                    до справжнього мистецтва триває, поки перебуваєш у
-                    створеному ним світі, сповнюючись позитивом від побаченого:
-                    гармонією кольорів, форм і задуму, які лишаться з ним світі,
-                    сповнюючись позитивом від побаченого: гармонією кольорів,
-                    форм і задуму, які лишаться з тобою й надалі. Побачити
-                    дивовижну «Українську містерію» можна в Атріумі
-                    Національного музею Тараса Шевченка, де вперше в Києві
-                    відкрилася виставка чернігівського художника.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="gallery">
-        <h1 class="title">ГАЛЕРЕЯ</h1>
-        <div class="gallery__slider_wrapper">
-          <div class="gallery__slider">
-            <a href="images/artist_with_filter/goat.png" data-fancybox="slider">
-              <img src="images/artist_with_filter/goat.png" alt="work" />
-            </a>
-
-            <a href="images/artist_with_filter/goat.png" data-fancybox="slider">
-              <img src="images/artist_with_filter/goat.png" alt="work" />
-            </a>
-
-            <a href="images/artist_with_filter/goat.png" data-fancybox="slider">
-              <img src="images/artist_with_filter/goat.png" alt="work" />
-            </a>
-          </div>
-        </div>
-
-        <div class="gallery__slider_capture">
-          <div class="gallery__slider_description">
-            <h4 class="gallery__slider_name">Водіння кози</h4>
-            <p class="gallery__slider_subtitle">Холст, олія. 120х80 см.</p>
-            <p class="gallery__slider_text">
-              Короткий опис картини, щось цікаве, приємне. Декілька слів про
-              техніку написання, про настрій автора під час створення/ Короткий
-              опис картини, щось цікаве, приємне. Декілька слів про техніку
-              написання, про настрій автора під час створення
-            </p>
-          </div>
-
-          <div class="gallery__slider_description">
-            <h4 class="gallery__slider_name">Водіння</h4>
-            <p class="gallery__slider_subtitle">Холст, олія. 120х80 см.</p>
-            <p class="gallery__slider_text">
-              Короткий опис картини, щось цікаве, приємне. Декілька слів про
-              техніку написання, про настрій автора під час створення/ Короткий
-              опис картини, щось цікаве, приємне. Декілька слів про техніку
-              написання, про настрій авя
-            </p>
-          </div>
-
-          <div class="gallery__slider_description">
-            <h4 class="gallery__slider_name">Водіння кози</h4>
-            <p class="gallery__slider_subtitle">Холст, олія. 120х80 см.</p>
-            <p class="gallery__slider_text">
-              Короткий опис картини, щось цікаве, приємне. Декілька слів про
-              техніку написання, про настрій автора під час створення/ Короткий
-              опис картини, щось цікаве, приємне.
-            </p>
-          </div>
-        </div>
-
-        <div class="gallery__years">
-          <input name="year" type="radio" id="2011" data-year="2011" />
-          <label for="2011" class="gallery__btn"
-            >2011
-            <span class="rectangle"><span class="circle"></span></span>
-          </label>
-
-          <input name="year" type="radio" id="2012" data-year="2012" />
-          <label for="2012" class="gallery__btn"
-            >2012
-            <span class="rectangle"><span class="circle"></span></span>
-          </label>
-
-          <input name="year" type="radio" id="2013" data-year="2013" />
-          <label for="2013" class="gallery__btn"
-            >2013
-            <span class="rectangle"><span class="circle"></span></span>
-          </label>
-
-          <input name="year" type="radio" id="2014" data-year="2014" />
-          <label for="2014" class="gallery__btn"
-            >2014
-            <span class="rectangle"><span class="circle"></span></span>
-          </label>
-
-          <input name="year" type="radio" id="2015" data-year="2015" />
-          <label for="2015" class="gallery__btn"
-            >2015
-            <span class="rectangle"><span class="circle"></span></span>
-          </label>
-
-          <input name="year" type="radio" id="2016" data-year="2016" />
-          <label for="2016" class="gallery__btn"
-            >2016
-            <span class="rectangle"><span class="circle"></span></span>
-          </label>
-
-          <input name="year" type="radio" id="2017" data-year="2017" />
-          <label for="2017" class="gallery__btn"
-            >2017
-            <span class="rectangle"><span class="circle"></span></span>
-          </label>
-
-          <input name="year" type="radio" id="2018" data-year="2018" />
-          <label for="2018" class="gallery__btn"
-            >2018
-            <span class="rectangle"><span class="circle"></span></span>
-          </label>
-
-          <input name="year" type="radio" id="2019" data-year="2019" />
-          <label for="2019" class="gallery__btn"
-            >2019
-            <span class="rectangle"><span class="circle"></span></span>
-          </label>
-
-          <input name="year" type="radio" id="2020" data-year="2020" />
-          <label for="2020" class="gallery__btn"
-            >2020
-            <span class="rectangle"><span class="circle"></span></span>
-          </label>
-
-          <input name="year" type="radio" id="2021" data-year="2021" />
-          <label for="2021" class="gallery__btn"
-            >2021
-            <span class="rectangle"><span class="circle"></span></span>
-          </label>
-        </div>
-
-        <div class="gallery__wrapper">
-          <div class="gallery__filter">
-            <p>ОБЕРІТЬ ТЕХНІКУ</p>
-            <div class="gallery__filter_wrapper">
-              <div class="gallery__filter_category">
-                <input
-                  type="checkbox"
-                  name="category"
-                  id="watercolor"
-                  data-category="watercolor"
-                  checked
-                />
-                <label for="watercolor" class="gallery__btn">АКВАРЕЛЬ</label>
-              </div>
-
-              <div class="gallery__filter_category">
-                <input
-                  type="checkbox"
-                  name="category"
-                  id="graphics"
-                  data-category="graphics"
-                />
-                <label for="graphics" class="gallery__btn">ГРАФІКА</label>
-              </div>
-
-              <div class="gallery__filter_category">
-                <input
-                  type="checkbox"
-                  name="category"
-                  id="oil"
-                  data-category="oil"
-                />
-                <label for="oil" class="gallery__btn">ОЛІЯ</label>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery__showcase">
-            <div class="work_card">
-              <a href="images/works/3.png" data-fancybox="gallery_img">
-                <img
-                  src="images/works/3.png"
-                  alt="painting"
-                  class="work_card__preview"
-                />
-              </a>
-              <div class="work_card__info">
-                <p class="work_card__date">06.02.2021</p>
-                <h4 class="work_card__name">Магічні створіння</h4>
-                <span class="link work_card__link">25 х 30 см</span>
-              </div>
-            </div>
-
-            <div class="work_card">
-              <a href="images/works/3.png" data-fancybox="gallery_img">
-                <img
-                  src="images/works/3.png"
-                  alt="painting"
-                  class="work_card__preview"
-                />
-              </a>
-              <div class="work_card__info">
-                <p class="work_card__date">06.02.2021</p>
-                <h4 class="work_card__name">Магічні створіння</h4>
-                <span class="link work_card__link">25 х 30 см</span>
-              </div>
-            </div>
-            <div class="work_card">
-              <a href="images/works/3.png" data-fancybox="gallery_img">
-                <img
-                  src="images/works/3.png"
-                  alt="painting"
-                  class="work_card__preview"
-                />
-              </a>
-              <div class="work_card__info">
-                <p class="work_card__date">06.02.2021</p>
-                <h4 class="work_card__name">Магічні створіння</h4>
-                <span class="link work_card__link">25 х 30 см</span>
-              </div>
-            </div>
-            <div class="work_card">
-              <a href="images/works/3.png" data-fancybox="gallery_img">
-                <img
-                  src="images/works/3.png"
-                  alt="painting"
-                  class="work_card__preview"
-                />
-              </a>
-              <div class="work_card__info">
-                <p class="work_card__date">06.02.2021</p>
-                <h4 class="work_card__name">Магічні створіння</h4>
-                <span class="link work_card__link">25 х 30 см</span>
-              </div>
-            </div>
-            <div class="work_card">
-              <a href="images/works/3.png" data-fancybox="gallery_img">
-                <img
-                  src="images/works/3.png"
-                  alt="painting"
-                  class="work_card__preview"
-                />
-              </a>
-              <div class="work_card__info">
-                <p class="work_card__date">06.02.2021</p>
-                <h4 class="work_card__name">Магічні створіння</h4>
-                <span class="link work_card__link">25 х 30 см</span>
-              </div>
-            </div>
-            <div class="work_card">
-              <a href="images/works/3.png" data-fancybox="gallery_img">
-                <img
-                  src="images/works/3.png"
-                  alt="painting"
-                  class="work_card__preview"
-                />
-              </a>
-              <div class="work_card__info">
-                <p class="work_card__date">06.02.2021</p>
-                <h4 class="work_card__name">Магічні створіння</h4>
-                <span class="link work_card__link">25 х 30 см</span>
-              </div>
-            </div>
-            <div class="work_card">
-              <a href="images/works/3.png" data-fancybox="gallery_img">
-                <img
-                  src="images/works/3.png"
-                  alt="painting"
-                  class="work_card__preview"
-                />
-              </a>
-              <div class="work_card__info">
-                <p class="work_card__date">06.02.2021</p>
-                <h4 class="work_card__name">Магічні створіння</h4>
-                <span class="link work_card__link">25 х 30 см</span>
-              </div>
-            </div>
-            <div class="work_card">
-              <a href="images/works/3.png" data-fancybox="gallery_img">
-                <img
-                  src="images/works/3.png"
-                  alt="painting"
-                  class="work_card__preview"
-                />
-              </a>
-              <div class="work_card__info">
-                <p class="work_card__date">06.02.2021</p>
-                <h4 class="work_card__name">Магічні створіння</h4>
-                <span class="link work_card__link">25 х 30 см</span>
-              </div>
-            </div>
-            <div class="work_card">
-              <a href="images/works/3.png" data-fancybox="gallery_img">
-                <img
-                  src="images/works/3.png"
-                  alt="painting"
-                  class="work_card__preview"
-                />
-              </a>
-              <div class="work_card__info">
-                <p class="work_card__date">06.02.2021</p>
-                <h4 class="work_card__name">Магічні створіння</h4>
-                <span class="link work_card__link">25 х 30 см</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery__pagination">
-            <svg
-              class="gallery__pagination_prev gallery__pagination_arrow"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              width="105"
-              height="196"
-              viewBox="0 0 105 196"
-            >
-              <image
-                id="next_copy"
-                data-name="next copy"
-                width="105"
-                height="196"
-                xlink:href="data:img/png;base64,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"
-              />
-            </svg>
-
-            <p class="gallery__pagination_num">1</p>
-            <p class="gallery__pagination_num">2</p>
-            <p class="gallery__pagination_num">3</p>
-
-            <svg
-              class="gallery__pagination_next gallery__pagination_arrow"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              width="105"
-              height="196"
-              viewBox="0 0 105 196"
-            >
-              <image
-                id="prev_copy"
-                data-name="next copy"
-                width="105"
-                height="196"
-                xlink:href="data:img/png;base64,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"
-              />
-            </svg>
-          </div>
-        </div>
-      </section>
-
-      <section class="projects">
-        <h1 class="title projects__title">ПРОЄКТИ</h1>
-        <div class="projects__slider slider">
-          <img
-            class="projects__img"
-            src="images/artist_with_filter/projects_slider1.png"
-            alt="pic"
-          />
-          <img
-            class="projects__img"
-            src="images/artist_with_filter/projects_slider1.png"
-            alt="pic"
-          />
-          <img
-            class="projects__img"
-            src="images/artist_with_filter/projects_slider1.png"
-            alt="pic"
-          />
-        </div>
-
-        <div class="paper projects__capture">
-          <div>
-            <p class="projects__capture_place">
-              2021 / Київ, галерея «Білий світ»
-            </p>
-            <h2 class="projects__capture_name">EX-FLUXUS</h2>
-            <a href="" class="link">УСІ РОБОТИ</a>
-          </div>
-
-          <p class="projects__scroll">
-            Проєкт присвячений тому-то та тому-то, бо так треба було. А взагалі
-            тут якась цікава, проте коротка (лаконічна, деякою мірою лапідарна)
-            інформація. Про те, що, чому, де, коли та як. Ось якось так. Корисна
-            інформація, цікаві факти, розумні та красиві слова та речення. Щось
-            таке про мистецтво. Проєкт присвячений тому-то та тому-то, бо так
-            треба було. А взагалі тут якась цікава, проте коротка (лаконічна,
-            деякою мірою лапідарна) інформація. Про те, що, чому, де, коли та
-            як. Проєкт присвячений тому-то та тому-то, бо так треба було. А
-            взагалі тут якась цікава, проте коротка (лаконічна, деякою мірою
-            лапідарна) інформація. Про те, що, чому, де, коли та як. Ось якось
-            так. Корисна інформація, цікаві факти, розумні та красиві слова та
-            речення. Щось таке про мистецтво. Проєкт присвячений тому-то та
-            тому-то, бо так треба було. А взагалі тут якась цікава, проте
-            коротка (лаконічна, деякою мірою лапідарна) інформація. Про те, що,
-            чому, де, коли та як. Проєкт присвячений тому-то та тому-то, бо так
-            треба було. А взагалі тут якась цікава, проте коротка (лаконічна,
-            деякою мірою лапідарна) інформація. Про те, що, чому, де, коли та
-            як. Ось якось так. Корисна інформація, цікаві факти, розумні та
-            красиві слова та речення. Щось таке про мистецтво. Проєкт
-            присвячений тому-то та тому-то, бо так треба було. А взагалі тут
-            якась цікава, проте коротка (лаконічна, деякою мірою лапідарна)
-            інформація. Про те, що, чому, де, коли та як. Проєкт присвячений
-            тому-то та тому-то, бо так треба було. А взагалі тут якась цікава,
-            проте коротка (лаконічна, деякою мірою лапідарна) інформація. Про
-            те, що, чому, де, коли та як. Ось якось так. Корисна інформація,
-            цікаві факти, розумні та красиві слова та речення. Щось таке про
-            мистецтво. Проєкт присвячений тому-то та тому-то, бо так треба було.
-            А взагалі тут якась цікава, проте коротка (лаконічна, деякою мірою
-            лапідарна) інформація. Про те, що, чому, де, коли та як.
+      <div class="artist__general">
+        <img src="images/artists/potapenko.png" alt="artist" class="artist__photo" />
+        <div class="artist__general_wrapper">
+          <h2 class="artist__name">Олексій Потапенко</h2>
+          <p class="artist__style">
+            <span>Живопис / </span><span>графіка /</span><span> скульптура</span>
           </p>
-          <p class="projects__capture_info">Фотографії із архівів Автора</p>
+          <p class="artist__subtitle">
+            Життя сповнено мрією. Якийсь красивий підзаголовок. Декілька
+            речень про нього. Дуже коротко, проте дуже влучно. Декілька
+            речень про нього. Дуже стисло, проте дуже влучно. Якийсь
+            красивий підзаголовок.
+          </p>
+        </div>
+      </div>
+
+      <div class="artist__main">
+        <div class="paper__part">
+          <div class="paper__sideBar">
+            <div class="paper__sideBar_block">
+              <h4 class="paper__sideBar_title">БІОГРАФІЯ</h4>
+              <a href="" class="paper__anchor">ЮНІСТЬ</a>
+              <a href="" class="paper__anchor">РАННЯ ТВОРЧІСТЬ</a>
+              <a href="" class="paper__anchor">ВИЗНАННЯ</a>
+            </div>
+
+            <div class="paper__sideBar_block">
+              <h4 class="paper__sideBar_title">ПРОЄКТИ</h4>
+              <a href="" class="paper__anchor">EX-FLUXUS</a>
+              <a href="" class="paper__anchor">LIGHT OF THE SUN</a>
+              <a href="" class="paper__anchor">SKYFALL</a>
+            </div>
+
+            <div class="paper__sideBar_block">
+              <a href="#gallery" class="paper__sideBar_title">ГАЛЕРЕЯ</a>
+            </div>
+          </div>
+
+          <div class="paper__biography">
+            <p class="paper__text">
+              Перед дивовижними картинами Олексія Потапенка просто
+              завмираєш. Це відчуття причетності до справжнього мистецтва
+              триває, поки перебуваєш у створеному ним світі, сповнюючись
+              позитивом від побаченого: гармонією кольорів, форм і задуму,
+              які лишаться з тобою й надалі. Побачити дивовижну «Українську
+              містерію» можна в Атріумі Національного музею Тараса Шевченка,
+              де вперше в Києві відкрилася виставка чернігівського
+              художника.
+            </p>
+
+            <p class="paper__text">
+              Перед дивовижними картинами Олексія Потапенка просто
+              завмираєш. Це відчуття причетності до справжнього мистецтва
+              триває, поки перебуваєш у створеному ним світі, сповнюючись
+              позитивом від побаченого: гармонією кольорів, форм і задуму,
+              які лишаться з тобою й надалі. Побачити дивовижну «Українську
+              містерію» можна в Атріумі Національного музею Тараса Шевченка,
+              де вперше в Києві відкрилася виставка чернігівського
+              художника. Перед дивовижними картинами Олексія Потапенка
+              просто завмираєш. Це відчуття причетності до справжнього
+              мистецтва триває, поки перебуваєш у створеному ним світі,
+              сповнюючись позитивом від побаченого: гармонією кольорів, форм
+              і задуму, які лишаться з тобою й надалі. Побачити дивовижну
+              «Українську містерію» можна в Атріумі Національного музею
+              Тараса Шевченка, де вперше в Києві відкрилася виставка
+              чернігівського художника. Перед дивовижними картинами Олексія
+              Потапенка просто завмираєш. Це відчуття причетності до
+              справжнього мистецтва триває, поки перебуваєш у створеному ним
+              світі, сповнюючись позитивом від побаченого: гармонією
+              кольорів, форм і задуму, які лишаться з тобою й надалі.
+              Побачити дивовижну «Українську містерію» можна в Атріумі
+              Національного музею Тараса Шевченка, де вперше в Києві
+              відкрилася виставка чернігівського художника.
+            </p>
+
+            <p class="paper__text">
+              Перед дивовижними картинами Олексія Потапенка просто
+              завмираєш. Це відчуття причетності до справжнього мистецтва
+              триває, поки перебуваєш у створеному ним світі, сповнюючись
+              позитивом від побаченого: гармонією кольорів, форм і задуму,
+              які лишаться з тобою й надалі. Побачити дивовижну «Українську
+              містерію» можна в Атріумі Національного музею Тараса Шевченка,
+              де вперше в Києві відкрилася виставка чернігівського
+              художника. Перед дивовижними картинами Олексія Потапенка
+              просто завмираєш. Це відчуття причетності до справжнього
+              мистецтва триває, поки перебуваєш у створеному ним світі,
+              сповнюючись позитивом від побаченого: гармонією кольорів, форм
+              і задуму, які лишаться з тобою й надалі. Побачити дивовижну
+              «Українську містерію» можна в Атріумі Національного музею
+              Тараса Шевченка, де вперше в Києві відкрилася виставка
+              чернігівського художника.
+            </p>
+
+            <p class="paper__text">
+              Перед дивовижними картинами Олексія Потапенка просто
+              завмираєш. Це відчуття причетності до справжнього мистецтва
+              триває, поки перебуваєш у створеному ним світі, сповнюючись
+              позитивом від побаченого: гармонією кольорів, форм і задуму,
+              які лишаться з тобою й надалі. Побачити дивовижну «Українську
+              містерію» можна в Атріумі Національного музею Тараса Шевченка,
+              де вперше в Києві відкрилася виставка чернігівського
+              художника.
+            </p>
+
+            <div class="quote">
+              <span class="quote__beginning quote__beginning_right">‘‘</span>
+              <p class="quote__text">
+                Я вважаю, що його постать, як митця, як художника, - не може
+                бути повною мірою зрозумілою нашим прийдешним поколінням.
+              </p>
+              <img src="images/artist_with_filter/calf.png" alt="calf" class="quote__img" />
+              <span class="quote__author quote__author_left">
+                Георгій Ла-Фонтьє
+              </span>
+            </div>
+
+            <div class="artist__biography">
+              <p class="paper__text">
+                Перед дивовижними картинами Олексія Потапенка просто
+                завмираєш. Це відчуття причетності до справжнього мистецтва
+                триває, поки перебуваєш у створеному ним світі, сповнюючись
+                позитивом від побаченого: гармонією кольорів, форм і задуму,
+                які лишаться з тобою й надалі. Побачити дивовижну
+                «Українську містерію» можна в Атріумі Національного музею
+                Тараса Шевченка, де вперше в Києві відкрилася виставка
+                чернігівського художника.
+              </p>
+
+              <p class="paper__text">
+                Перед дивовижними картинами Олексія Потапенка просто
+                завмираєш. Це відчуття причетності до справжнього мистецтва
+                триває, поки перебуваєш у створеному ним світі, сповнюючись
+                позитивом від побаченого: гармонією кольорів, форм і задуму,
+                які лишаться з тобою й надалі. Побачити дивовижну
+                «Українську містерію» можна в Атріумі Національного музею
+                Тараса Шевченка, де вперше в Києві відкрилася виставка
+                чернігівського художника. Перед дивовижними картинами
+                Олексія Потапенка просто завмираєш. Це відчуття причетності
+                до справжнього мистецтва триває, поки перебуваєш у
+                створеному ним світі, сповнюючись позитивом від побаченого:
+                гармонією кольорів, форм і задуму, які лишаться з ним світі,
+                сповнюючись позитивом від побаченого: гармонією кольорів,
+                форм і задуму, які лишаться з тобою й надалі. Побачити
+                дивовижну «Українську містерію» можна в Атріумі
+                Національного музею Тараса Шевченка, де вперше в Києві
+                відкрилася виставка чернігівського художника.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h1 class="title">ГАЛЕРЕЯ</h1>
+    <div class="gallery__slider_wrapper">
+      <div class="gallery__slider">
+        <a href="images/artist_with_filter/goat.png" data-fancybox="slider">
+          <img src="images/artist_with_filter/goat.png" alt="work" />
+        </a>
+
+        <a href="images/artist_with_filter/goat.png" data-fancybox="slider">
+          <img src="images/artist_with_filter/goat.png" alt="work" />
+        </a>
+
+        <a href="images/artist_with_filter/goat.png" data-fancybox="slider">
+          <img src="images/artist_with_filter/goat.png" alt="work" />
+        </a>
+      </div>
+    </div>
+
+    <div class="gallery__slider_capture">
+      <div class="gallery__slider_description">
+        <h4 class="gallery__slider_name">Водіння кози</h4>
+        <p class="gallery__slider_subtitle">Холст, олія. 120х80 см.</p>
+        <p class="gallery__slider_text">
+          Короткий опис картини, щось цікаве, приємне. Декілька слів про
+          техніку написання, про настрій автора під час створення/ Короткий
+          опис картини, щось цікаве, приємне. Декілька слів про техніку
+          написання, про настрій автора під час створення
+        </p>
+      </div>
+
+      <div class="gallery__slider_description">
+        <h4 class="gallery__slider_name">Водіння</h4>
+        <p class="gallery__slider_subtitle">Холст, олія. 120х80 см.</p>
+        <p class="gallery__slider_text">
+          Короткий опис картини, щось цікаве, приємне. Декілька слів про
+          техніку написання, про настрій автора під час створення/ Короткий
+          опис картини, щось цікаве, приємне. Декілька слів про техніку
+          написання, про настрій авя
+        </p>
+      </div>
+
+      <div class="gallery__slider_description">
+        <h4 class="gallery__slider_name">Водіння кози</h4>
+        <p class="gallery__slider_subtitle">Холст, олія. 120х80 см.</p>
+        <p class="gallery__slider_text">
+          Короткий опис картини, щось цікаве, приємне. Декілька слів про
+          техніку написання, про настрій автора під час створення/ Короткий
+          опис картини, щось цікаве, приємне.
+        </p>
+      </div>
+    </div>
+
+    <div class="gallery__years_wrapper">
+      <div class="gallery__years">
+        <input name="year" type="radio" id="2011" data-year="2011" />
+        <label for="2011" class="gallery__btn">2011
+          <span class="rectangle"><span class="circle"></span></span>
+        </label>
+
+        <input name="year" type="radio" id="2012" data-year="2012" />
+        <label for="2012" class="gallery__btn">2012
+          <span class="rectangle"><span class="circle"></span></span>
+        </label>
+
+        <input name="year" type="radio" id="2013" data-year="2013" />
+        <label for="2013" class="gallery__btn">2013
+          <span class="rectangle"><span class="circle"></span></span>
+        </label>
+
+        <input name="year" type="radio" id="2014" data-year="2014" />
+        <label for="2014" class="gallery__btn">2014
+          <span class="rectangle"><span class="circle"></span></span>
+        </label>
+
+        <input name="year" type="radio" id="2015" data-year="2015" />
+        <label for="2015" class="gallery__btn">2015
+          <span class="rectangle"><span class="circle"></span></span>
+        </label>
+
+        <input name="year" type="radio" id="2016" data-year="2016" />
+        <label for="2016" class="gallery__btn">2016
+          <span class="rectangle"><span class="circle"></span></span>
+        </label>
+
+        <input name="year" type="radio" id="2017" data-year="2017" />
+        <label for="2017" class="gallery__btn">2017
+          <span class="rectangle"><span class="circle"></span></span>
+        </label>
+
+        <input name="year" type="radio" id="2018" data-year="2018" />
+        <label for="2018" class="gallery__btn">2018
+          <span class="rectangle"><span class="circle"></span></span>
+        </label>
+
+        <input name="year" type="radio" id="2019" data-year="2019" />
+        <label for="2019" class="gallery__btn">2019
+          <span class="rectangle"><span class="circle"></span></span>
+        </label>
+
+        <input name="year" type="radio" id="2020" data-year="2020" />
+        <label for="2020" class="gallery__btn">2020
+          <span class="rectangle"><span class="circle"></span></span>
+        </label>
+
+        <input name="year" type="radio" id="2021" data-year="2021" />
+        <label for="2021" class="gallery__btn">2021
+          <span class="rectangle"><span class="circle"></span></span>
+        </label>
+
+        <input name="year" type="radio" id="2021" data-year="2021" />
+        <label for="2021" class="gallery__btn">2021
+          <span class="rectangle"><span class="circle"></span></span>
+        </label>
+
+        <input name="year" type="radio" id="2021" data-year="2021" />
+        <label for="2021" class="gallery__btn">2021
+          <span class="rectangle"><span class="circle"></span></span>
+        </label>
+
+        <input name="year" type="radio" id="2021" data-year="2021" />
+        <label for="2021" class="gallery__btn">2021
+          <span class="rectangle"><span class="circle"></span></span>
+        </label>
+
+        <input name="year" type="radio" id="2021" data-year="2021" />
+        <label for="2021" class="gallery__btn">2021
+          <span class="rectangle"><span class="circle"></span></span>
+        </label>
+
+        <input name="year" type="radio" id="2021" data-year="2021" />
+        <label for="2021" class="gallery__btn">2021
+          <span class="rectangle"><span class="circle"></span></span>
+        </label>
+
+        <input name="year" type="radio" id="2021" data-year="2021" />
+        <label for="2021" class="gallery__btn">2021
+          <span class="rectangle"><span class="circle"></span></span>
+        </label>
+
+        <input name="year" type="radio" id="2021" data-year="2021" />
+        <label for="2021" class="gallery__btn">2021
+          <span class="rectangle"><span class="circle"></span></span>
+        </label>
+
+        <input name="year" type="radio" id="2021" data-year="2021" />
+        <label for="2021" class="gallery__btn">2021
+          <span class="rectangle"><span class="circle"></span></span>
+        </label>
+
+        <input name="year" type="radio" id="2021" data-year="2021" />
+        <label for="2021" class="gallery__btn">2021
+          <span class="rectangle"><span class="circle"></span></span>
+        </label>
+
+        <input name="year" type="radio" id="2021" data-year="2021" />
+        <label for="2021" class="gallery__btn">2021
+          <span class="rectangle"><span class="circle"></span></span>
+        </label>
+
+        <input name="year" type="radio" id="2021" data-year="2021" />
+        <label for="2021" class="gallery__btn">2021
+          <span class="rectangle"><span class="circle"></span></span>
+        </label>
+
+        <input name="year" type="radio" id="2021" data-year="2021" />
+        <label for="2021" class="gallery__btn">2021
+          <span class="rectangle"><span class="circle"></span></span>
+        </label>
+
+        <input name="year" type="radio" id="2021" data-year="2021" />
+        <label for="2021" class="gallery__btn">2021
+          <span class="rectangle"><span class="circle"></span></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="gallery__wrapper">
+      <div class="gallery__filter">
+        <p>ОБЕРІТЬ ТЕХНІКУ</p>
+        <div class="gallery__filter_wrapper">
+          <div class="gallery__filter_category">
+            <input type="checkbox" name="category" id="watercolor" data-category="watercolor" checked />
+            <label for="watercolor" class="gallery__btn">АКВАРЕЛЬ</label>
+          </div>
+
+          <div class="gallery__filter_category">
+            <input type="checkbox" name="category" id="graphics" data-category="graphics" />
+            <label for="graphics" class="gallery__btn">ГРАФІКА</label>
+          </div>
+
+          <div class="gallery__filter_category">
+            <input type="checkbox" name="category" id="oil" data-category="oil" />
+            <label for="oil" class="gallery__btn">ОЛІЯ</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__showcase">
+        <div class="work_card">
+          <a href="images/works/3.png" data-fancybox="gallery_img">
+            <img src="images/works/3.png" alt="painting" class="work_card__preview" />
+          </a>
+          <div class="work_card__info">
+            <p class="work_card__date">06.02.2021</p>
+            <h4 class="work_card__name">Магічні створіння</h4>
+            <span class="link work_card__link">25 х 30 см</span>
+          </div>
         </div>
 
-        <div class="media">
+        <div class="work_card">
+          <a href="images/works/3.png" data-fancybox="gallery_img">
+            <img src="images/works/3.png" alt="painting" class="work_card__preview" />
+          </a>
+          <div class="work_card__info">
+            <p class="work_card__date">06.02.2021</p>
+            <h4 class="work_card__name">Магічні створіння</h4>
+            <span class="link work_card__link">25 х 30 см</span>
+          </div>
+        </div>
+        <div class="work_card">
+          <a href="images/works/3.png" data-fancybox="gallery_img">
+            <img src="images/works/3.png" alt="painting" class="work_card__preview" />
+          </a>
+          <div class="work_card__info">
+            <p class="work_card__date">06.02.2021</p>
+            <h4 class="work_card__name">Магічні створіння</h4>
+            <span class="link work_card__link">25 х 30 см</span>
+          </div>
+        </div>
+        <div class="work_card">
+          <a href="images/works/3.png" data-fancybox="gallery_img">
+            <img src="images/works/3.png" alt="painting" class="work_card__preview" />
+          </a>
+          <div class="work_card__info">
+            <p class="work_card__date">06.02.2021</p>
+            <h4 class="work_card__name">Магічні створіння</h4>
+            <span class="link work_card__link">25 х 30 см</span>
+          </div>
+        </div>
+        <div class="work_card">
+          <a href="images/works/3.png" data-fancybox="gallery_img">
+            <img src="images/works/3.png" alt="painting" class="work_card__preview" />
+          </a>
+          <div class="work_card__info">
+            <p class="work_card__date">06.02.2021</p>
+            <h4 class="work_card__name">Магічні створіння</h4>
+            <span class="link work_card__link">25 х 30 см</span>
+          </div>
+        </div>
+        <div class="work_card">
+          <a href="images/works/3.png" data-fancybox="gallery_img">
+            <img src="images/works/3.png" alt="painting" class="work_card__preview" />
+          </a>
+          <div class="work_card__info">
+            <p class="work_card__date">06.02.2021</p>
+            <h4 class="work_card__name">Магічні створіння</h4>
+            <span class="link work_card__link">25 х 30 см</span>
+          </div>
+        </div>
+        <div class="work_card">
+          <a href="images/works/3.png" data-fancybox="gallery_img">
+            <img src="images/works/3.png" alt="painting" class="work_card__preview" />
+          </a>
+          <div class="work_card__info">
+            <p class="work_card__date">06.02.2021</p>
+            <h4 class="work_card__name">Магічні створіння</h4>
+            <span class="link work_card__link">25 х 30 см</span>
+          </div>
+        </div>
+        <div class="work_card">
+          <a href="images/works/3.png" data-fancybox="gallery_img">
+            <img src="images/works/3.png" alt="painting" class="work_card__preview" />
+          </a>
+          <div class="work_card__info">
+            <p class="work_card__date">06.02.2021</p>
+            <h4 class="work_card__name">Магічні створіння</h4>
+            <span class="link work_card__link">25 х 30 см</span>
+          </div>
+        </div>
+        <div class="work_card">
+          <a href="images/works/3.png" data-fancybox="gallery_img">
+            <img src="images/works/3.png" alt="painting" class="work_card__preview" />
+          </a>
+          <div class="work_card__info">
+            <p class="work_card__date">06.02.2021</p>
+            <h4 class="work_card__name">Магічні створіння</h4>
+            <span class="link work_card__link">25 х 30 см</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__pagination">
+        <svg class="gallery__pagination_prev gallery__pagination_arrow" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" width="105" height="196" viewBox="0 0 105 196">
+          <image id="next_copy" data-name="next copy" width="105" height="196"
+            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGkAAADECAYAAACcAA8KAAAHP0lEQVR4nO3dS6hVVRzH8W+WRhHaQCn0DgKNJgkVlIMkTExKNCKS0iAJHGQFNesx7zWrIK1BEPnIokFpERiY0YMsMSiJhN5Uk0pMIclHxrqurVe9556zz/7/9157r993VHJdd3c+rHN2++y91jnHjx9H1d4FwGpgOXA1cBGwD/gM2AC8DvxXHJSQ6u96YDMwMsFv3gXcCfyAkGpvIfBOnEn9+j2C/jQpn9en8coAhWYC69FMqq2yQGNbopnkXxWg0ArNJN+qAoX2CskvC6DQPr3d+WQFFPpLSPZZAoW+FJJt1kChN/WZZJcH0FfhspFmkk03OAAdCKff4RqekKo3D9jqALQY+Cb8i5CqFYC2AVMNxyyAdhZ/IKThqwUIIQ1dbUAIaahqBUJIpasdCCGVygPoYD8ghDRwHkCHgNv6ASGkgfICWgpsH+SHhTRxjQMhpAlLAgjd49CzufGFnG445lBAaCaNW1JACOmskgNCSKeVJBBCOlmyQAhptKSBEFL6QGSO5AF0JD7OYgZExkheQHcA7xqOOVqOSJ5AWwzHPFluSK0DIrPLQnOAj4FLDMd0ByKjmRSAdrQRiEyQCqBZhmPWBkQGSK0HouNInQCiw0idAaKjSJ0CooNIHkBhZZKVTQHRMSQvoHvCg1yGY5auK0ieQBsNxxyqLiB1GogOXBYaiStbdRaIls+kka7PoKK2IhVAsw3HTBKIliJlBUQLkbIDomVIWQLRIqRsgWgJkgdQ6N42ANECJC+g+4FXjcd0K2UkT6B1xmO6liqSgMaU4mWhS+NdPQKKpTaTZgDvC+j0UkKaEW9cvNJ43FYDkRCSgCYoBSQB9alpJAENUJNIAhqwppAEVKImkLyAHusiEA0geQI9bTxmMtWJJKAhqwtJQBWqA2laXNhcQEPmjTQtLkd2nfG42QDhjCQgo7yQBGSYB5KAjLNGEpBDlkgCcsoKyQvoydyBMLrHwQvoGeBR4zFbWdWZJKAaqoIkoJoaFunCeKlHQDU0DFIBNN/48ATUo7JIBdCNxschoAkqgySghhoUSUANNgiSgBquH5KAEmiiKw5eQM8BD6f+wqRULyQvoBfjvXHatKlE473dCSixzkQSUIKNRZoCvC2g9CqQpsSF9xYZH6GADCqQngWWGY8tIKPC2d1VwO7wz4bjCsiwMJMeEFDahZn0I3CZ0VEKyKGAdBQ412Dol4A1ArJvUlytyqKZwOQOvTbJFJB+MTqYZfE0fkoHXpekCkjvGR6QoBwKn0lhXe1vjT6XirbGvR0Op/Qf29bCTPoufr9jWZhRG4zhs634qiJgrY8bZ1i2KS6heSz3F7pKxWWhYj3STcbjr4wrNGpGVWjsVfBjgkqzM79PElSCjffNrKASq9fdQoJKqH7PJ4UX8w3gduND1llfifrddxdexBXxf04t04wq0SB3sB6OVw8E1VCD3gsuqAYr81SFJ9TLxt8Od6qyzyd5Qa0C1gpq/IZ50s8L6j5Bjd+wz8wKqsaqPH0uqJqquo6DoGrIYtkaQTlnuTVPuK/hLeAW40PO/l4+6/2T9OiMQ9br3f0DLAU+MB4367c+j5UjBWWc1xqsnlAvGI+ZfJ6rGXtBrdFqxrZ5QT2idcFtE1TF6tqrQlAVqnPXF0ENWd37JwlqiJrYiUxQJWtyW+2pcXdmrePapyZ3xzwALAY+Nx63czOq6X1m/xZU/1LYsVlQfUpl73NPqMeNx6y9VJBwhHqi7ScSKSHhCPVUm6FSQ0JQZ5ciEoI6vVSRENSpUkZCUCdq8rJQmS4GPsp11+fUZ1LRfmAhsMd43FbMqLYghf7IFapNSOQK1ZbPpDObAWx3+Ix6CHjeeMzKtRUJR6hwO/M64zEr1ba3u7F5vfWtjff2JVObkcgFqu1I5ADVBSS6DtUVJLoM1eazu16Fs75PgMuNx23srK9LM6momFHfG4/b2IzqIlLoV2BBV6C6ikSXoLr4mXRmI8AOYLbxuKvjwlXu5YCEE1SxTPdGwzHHrctvd2PzeOubFNfqu9twzJ6/KJdaC5UTEm2Fyg2JNkLliETboHI5u+vVSLwLyWrjSTzO+nKdSUVhRt0E/GY4pvmMyh2JuMnXgpShhHSipKGEdCpPqBVVBsn9xGG85sRLSLMMxzwSl0DdMsxf1kw6O48ZNTlu7XrrMH9ZSOOXFJSQepcMlJAmLgkoIfWvcSghDVajUEIavAB1M/Cn4ZgDQQmpXHvi7WK1QgmpfF/XDSWk4aoVSpeFqjU3Psg23XDMf4ElcdzRNJOq5TGjzo+bsiws/kAzySaPGXUIWAR8KiS7PKB+Bq4Qkm0eUA8KyT5rqA+F5JMl1EEh+XVNXKB+atXfoFNwv3bHZeAOVPwN+4Xk204DqC+E5F9VqNf0mVRf84BtJT+j9oa1kzST6qvsjAo/txw4KqR6C1Dz4wyZqL3x58K1QV27a6jzgFXAXcC1wLS4KPAuYDPwSphBo8cG/A/OkIjdtMpQmgAAAABJRU5ErkJggg==" />
+        </svg>
+
+        <p class="gallery__pagination_num">1</p>
+        <p class="gallery__pagination_num">2</p>
+        <p class="gallery__pagination_num">3</p>
+
+        <svg class="gallery__pagination_next gallery__pagination_arrow" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" width="105" height="196" viewBox="0 0 105 196">
+          <image id="prev_copy" data-name="next copy" width="105" height="196"
+            xlink:href="data:img/png;base64,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" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects">
+    <h1 class="title projects__title">ПРОЄКТИ</h1>
+    <div class="projects__slider slider">
+      <img class="projects__img" src="images/artist_with_filter/projects_slider1.png" alt="pic" />
+      <img class="projects__img" src="images/artist_with_filter/projects_slider1.png" alt="pic" />
+      <img class="projects__img" src="images/artist_with_filter/projects_slider1.png" alt="pic" />
+    </div>
+
+    <div class="paper projects__capture">
+      <div>
+        <p class="projects__capture_place">
+          2021 / Київ, галерея «Білий світ»
+        </p>
+        <h2 class="projects__capture_name">EX-FLUXUS</h2>
+        <a href="" class="link">УСІ РОБОТИ</a>
+      </div>
+
+      <p class="projects__scroll">
+        Проєкт присвячений тому-то та тому-то, бо так треба було. А взагалі
+        тут якась цікава, проте коротка (лаконічна, деякою мірою лапідарна)
+        інформація. Про те, що, чому, де, коли та як. Ось якось так. Корисна
+        інформація, цікаві факти, розумні та красиві слова та речення. Щось
+        таке про мистецтво. Проєкт присвячений тому-то та тому-то, бо так
+        треба було. А взагалі тут якась цікава, проте коротка (лаконічна,
+        деякою мірою лапідарна) інформація. Про те, що, чому, де, коли та
+        як. Проєкт присвячений тому-то та тому-то, бо так треба було. А
+        взагалі тут якась цікава, проте коротка (лаконічна, деякою мірою
+        лапідарна) інформація. Про те, що, чому, де, коли та як. Ось якось
+        так. Корисна інформація, цікаві факти, розумні та красиві слова та
+        речення. Щось таке про мистецтво. Проєкт присвячений тому-то та
+        тому-то, бо так треба було. А взагалі тут якась цікава, проте
+        коротка (лаконічна, деякою мірою лапідарна) інформація. Про те, що,
+        чому, де, коли та як. Проєкт присвячений тому-то та тому-то, бо так
+        треба було. А взагалі тут якась цікава, проте коротка (лаконічна,
+        деякою мірою лапідарна) інформація. Про те, що, чому, де, коли та
+        як. Ось якось так. Корисна інформація, цікаві факти, розумні та
+        красиві слова та речення. Щось таке про мистецтво. Проєкт
+        присвячений тому-то та тому-то, бо так треба було. А взагалі тут
+        якась цікава, проте коротка (лаконічна, деякою мірою лапідарна)
+        інформація. Про те, що, чому, де, коли та як. Проєкт присвячений
+        тому-то та тому-то, бо так треба було. А взагалі тут якась цікава,
+        проте коротка (лаконічна, деякою мірою лапідарна) інформація. Про
+        те, що, чому, де, коли та як. Ось якось так. Корисна інформація,
+        цікаві факти, розумні та красиві слова та речення. Щось таке про
+        мистецтво. Проєкт присвячений тому-то та тому-то, бо так треба було.
+        А взагалі тут якась цікава, проте коротка (лаконічна, деякою мірою
+        лапідарна) інформація. Про те, що, чому, де, коли та як.
+      </p>
+      <p class="projects__capture_info">Фотографії із архівів Автора</p>
+    </div>
+
+    <div class="media">
   <a href="" class="media__link tag">FACEBOOK</a>
   <a href="" class="media__link tag">TWITTER</a>
   <a href="" class="media__link tag">PINTEREST</a>
@@ -650,9 +603,9 @@
   
 </div>
 
-      </section>
-    </main>
-    <section class="form">
+  </section>
+</main>
+<section class="form">
   <div class="form__title_wrapper">
     <div class="form__container">
       <h3 class="form__title">
@@ -754,7 +707,7 @@
   </div>
 </section>
 
-    <footer class="footer">
+<footer class="footer">
   <img class="footer__background" src="images/footer.png" alt="background" />
   <nav class="footer__nav">
     <ul class="footer__nav-list">
@@ -782,9 +735,7 @@
   </nav>
 </footer>
 
-    <a href="">f</a><a href="">f</a><a href="">f</a><a href="">f</a
-    ><a href="">f</a><a href="">f</a><a href=""></a><a href=""></a>
+<script src="js/main.min.js"></script>
+</body>
 
-    <script src="js/main.min.js"></script>
-  </body>
 </html>

@@ -6,8 +6,7 @@
   &__date {
     p {
       margin-left: -2vw;
-      color: #8a8a8a;
-      font-weight: 600;
+      color: hsl(0, 0%, 54%);
       font-size: 0.83rem;
       font-family: "Neris SemiBold", arial;
     }
@@ -52,7 +51,7 @@
 
       &:nth-child(3),
       &:last-child {
-        font-weight: 900;
+        font-family: "Playfair Display Black", serif;
       }
     }
   }
@@ -94,7 +93,7 @@
     font-size: 4em;
 
     &:nth-of-type(2) {
-      font-weight: 900;
+      font-family: "Playfair Display Black", serif;
     }
   }
 
@@ -162,7 +161,7 @@
       font-size: 4em;
 
       &:nth-of-type(2) {
-        font-weight: 900;
+        font-family: "Playfair Display Black", serif;
       }
     }
   }
@@ -186,8 +185,14 @@
 @media (max-width: 800px) {
   .burning-man__text {
     font-size: 0.833rem;
-    height: 30vw;
+    height: 20vw;
     overflow: hidden;
+
+    &_wrapper {
+      -webkit-column-width: 55vw;
+      column-width: 55vw;
+      height: 100%;
+    }
   }
 }
 
@@ -196,6 +201,10 @@
     &__david {
       width: 59vw;
       left: -10vw;
+    }
+
+    &__text {
+      height: 30vw;
     }
 
     &__info {

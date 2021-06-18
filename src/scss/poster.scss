@@ -31,14 +31,14 @@
 
   &__tag {
     font-size: 2em;
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair Display Regular", serif;
   }
 
   &__info {
     font-size: 2.3em;
 
     span {
-      font-style: italic;
+      font-family: "Playfair Display Italic", serif;
       font-size: inherit;
     }
   }
@@ -131,7 +131,6 @@
     padding: 3vw 0 3vw 5vw;
   }
 }
-
 
 @media (max-width: 800px) {
   .poster {
