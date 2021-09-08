@@ -1,8 +1,14 @@
-.work_card {
+.card {
+  width: 30%;
+  height: 100%;
   padding: 3vw 1.5vw;
+
+  display: flex !important;
+  flex-direction: column;
 
   &__preview {
     width: 100%;
+    height: 100%;
     display: block;
   }
 
@@ -16,12 +22,13 @@
   }
 
   &__date {
-    font-family: "Neris SemiBold", arial;
-    padding: 1vw 0;
+    font-family: 'Neris SemiBold', arial;
+    padding-top: 1vw;
     font-size: 0.83rem;
   }
 
   &__name {
+    padding-top: 1vw;
     letter-spacing: 2px;
     font-size: 1.16rem;
   }
@@ -34,7 +41,33 @@
   }
 }
 
+.showcase {
+  width: 82%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+
+  &_wrapper {
+    margin-top: -3em;
+  }
+
+  .card {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 800px) {
+  .showcase .card {
+    width: 50%;
+  }
+}
+
 @media (max-width: 420px) {
+  .showcase .card {
+    width: 100%;
+  }
+
   .work_card__link {
     bottom: -2.5vw;
   }

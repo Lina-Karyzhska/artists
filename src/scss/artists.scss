@@ -7,6 +7,11 @@
 
   margin: 0 auto;
 
+  &__info.card__info {
+    padding-top: 1vw;
+    padding-bottom: 3vw;
+  }
+
   &__item {
     position: relative;
 
@@ -53,7 +58,7 @@
   }
 
   &__style {
-    font-family: "Neris SemiBold", arial;
+    font-family: 'Neris SemiBold', arial;
     font-size: 0.67rem;
     letter-spacing: 0.1vw;
     text-align: center;
