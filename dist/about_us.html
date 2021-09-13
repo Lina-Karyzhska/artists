@@ -1,72 +1,62 @@
     <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/styles.min.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="burger">
-        <span></span>
-      </div>
-      <img src="images/logo.png" alt="logo" class="header__logo" />
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="burger__logo">
-            <img src="images/logo.png" alt="logo" class="burger__img" />
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="./index.html">ГОЛОВНА</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="./about_us.html">ПРО НАС</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="./artist_with_filter.html">ХУДОЖНИКИ</a>
-          </li>
-          <li class="nav__item nav__item-news-and-events">
-            <a class="nav__link" href="./news_and_events.html"
-              >НОВИНИ ТА ПОДІЇ</a
-            >
-          </li>
-          <li class="nav__item nav__item-news">
-            <a class="nav__link" href="./news_and_events.html">НОВИНИ</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="./exhibitions_all.html">ВИСТАВКИ</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="./contacts.html">КОНТАКТИ</a>
-          </li>
-          <p class="credentials__text burger__credentials-text">
-            Про Україну <br />
-            через мистецтво!
-          </p>
-          <div class="credentials__link_wr burger__credentials-link-wr">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              width="1.5vw"
-              height="1.5vw"
-              viewBox="0 0 80 80"
-            >
-              <image
-                id="facebook"
-                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAFO0lEQVR4nO2dbYgWVRTHf86uWqmLVmhpSS8bIZW9WbZI0HtQEvQCBVkgRVEf6ksf9kNQFH0LiohKioKCqA8FZSxYqyAoJbYaREKFa22tklrqqmW5rXHi3GV29nlm5z5zZ+bOM/ODA7vPznPn3v/cO3PuuefOTqNY5gHnA5cClwALgPnAGcDpwMlau2PAH8AeYB/wG/A98DUwCOwtqhVFCHgDcBNwM7AEmJWyvL+BH4D1an3AmKO6ekMP8Kb2mhMZ28/Ae8Ct7SDcQ8CGHERrZgPAk6FbQWlYBewoULio7VYhZ/gu4I3ANo+Ei9ou4G4PdJrEbOAdj4WL2qfAmb6IdzvwS4nEM3YIWF20eM+UULiovV6UeB+0gXjGNgFdeQkn97utbSSeMfEfF2ctXldOznBRtl+nlpkwE9jZxuIZOwCcm4WAAxUQz9gwMMeleB9VSDxj37gS79kKimfs7bTiXV9h8YytihMoLh44TYOYc9NehTbgbODXRs3ojGnb+yUSTyLTW7SRErEeBQKgA5iu4axZaqcCd2j0OykfAitsKrSsBEPrL+BVYGkLgq9t4XwP2Jxgl+firdNh1SpftHDOQ0nPda/n4r2cQjhDf4vnfi5J4T6Hpt51IB4pBDwRfW4EkYLvA85yVEnXyG3lQQ/q8UTcH32ert3iUIQ0PfCgPtkncYXH4g06FC+tgGIrTUHhIfy440q65A3H5R1N+f1HzQ/hG+JtKQvNkj7LsiX0djmwSJ3nMe05qJOdNua3UlNP9psPejwevkctF8Yf03BU1vV6hNAQvivlFcmSYZ11JEHWpV8DFuZQr6vDv3zrcQ8csGjUxhzrNSQBl0AXiS50f4GcMWpR0Dk51kumkt0iYHczv6ZmSnqC6FguOXnnBS4PNDu0pjUWBerP1LTGglrAdMwNcvKZ0jDf4rt5p6x1deoaQZEM62yjo0EdxDvYblG3zZrf0uxhYj7vnmI9KCknyXEjBTvKy3K+eHN024SLuo8EBW11CJN0muaKeRpscEKgV6NI0u4TseUCh2UdD3TxvEpc5rCtxwLdPlUlznPY1sOBruRXCZd+70ER8PeKCegyA3WvCPidwwJ9R1yYixzWcU+gSTlFkuctZIZxfh2xtVO3iv7bZCaQB0t1y2qjmGSH+olJH3SL1cdrNBM5bpthlYDN5pCiM+9HY/5mM0KGYsoZc1xn2fTdaRaVPnd8ZWyJ6/2zLcqKW71zPeOSDLFRI+Anjgt3yRGLsmyOTYskdY4va/ZX0J1Ji+xcmJDa0V/KZhTDBg3DTRCwsF2LJWSNqXJYwI36NK6JR9yhzxoJKLxUizclLwJ/Njtoum62K9InTOMH5pEcP2EPXbQHSvd82un1ai/kOXE4SYv21T1wkv3TaB4d7YGG+yvRn+zotV3+WF/3wHHb0eyEzXqgcKdGaWrgnlYEHKmH8v/0xvXAJKyp8BBel1p+ZUsFBdyd5IRxQzjMdRVb/hSXZXmSA5MKKGH1K222fJacFbrp0pmAaA+8qs3jhuJ1XGuCpUmwEVD4UXOqh5xXvXiOaM/blEdN5F0KX7XRQ2RnzlskxsnDxclawLUu091aYXUGS4Z5CdhbpHBhluiOyrII+CVwTfay2POwvofPVwEP+NTrmiFR7ed1a7wvAkoY6hXgtHylSIfkIj8F/JSjgIOR70r27Qsl2MoRS6fuR/5Yk4iyEjAIfadPI0lt996vhXqffMsioSnpUutMLfvijNswgaK3OEiyo8yx5f0GkpomLwST+5QkFJ2i91OZVsl/gPAP4D9Y7bQo+fwp1wAAAABJRU5ErkJggg=="
-              />
-            </svg>
 
-            <a href="" class="credential__media">UkrainianMystery</a>
-          </div>
-        </ul>
-      </nav>
-    </header>
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.min.css" />
+</head>
 
+<body>
+  <header class="header">
+    <div class="burger">
+      <span></span>
+    </div>
+    <img src="images/logo.png" alt="logo" class="header__logo" />
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="burger__logo">
+          <img src="images/logo.png" alt="logo" class="burger__img" />
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="./index.html">ГОЛОВНА</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="./about_us.html">ПРО НАС</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="./artists.html">ХУДОЖНИКИ</a>
+        </li>
+        <li class="nav__item nav__item-news-and-events">
+          <a class="nav__link" href="./news_and_events.html">НОВИНИ ТА ПОДІЇ</a>
+        </li>
+        <li class="nav__item nav__item-news">
+          <a class="nav__link" href="./news_and_events.html">НОВИНИ</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="./exhibitions_all.html">ВИСТАВКИ</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="./contacts.html">КОНТАКТИ</a>
+        </li>
+        <p class="credentials__text burger__credentials-text">
+          Про Україну <br />
+          через мистецтво!
+        </p>
+        <div class="credentials__link_wr burger__credentials-link-wr">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.5vw"
+            height="1.5vw" viewBox="0 0 80 80">
+            <image id="facebook"
+              xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAFO0lEQVR4nO2dbYgWVRTHf86uWqmLVmhpSS8bIZW9WbZI0HtQEvQCBVkgRVEf6ksf9kNQFH0LiohKioKCqA8FZSxYqyAoJbYaREKFa22tklrqqmW5rXHi3GV29nlm5z5zZ+bOM/ODA7vPznPn3v/cO3PuuefOTqNY5gHnA5cClwALgPnAGcDpwMlau2PAH8AeYB/wG/A98DUwCOwtqhVFCHgDcBNwM7AEmJWyvL+BH4D1an3AmKO6ekMP8Kb2mhMZ28/Ae8Ct7SDcQ8CGHERrZgPAk6FbQWlYBewoULio7VYhZ/gu4I3ANo+Ei9ou4G4PdJrEbOAdj4WL2qfAmb6IdzvwS4nEM3YIWF20eM+UULiovV6UeB+0gXjGNgFdeQkn97utbSSeMfEfF2ctXldOznBRtl+nlpkwE9jZxuIZOwCcm4WAAxUQz9gwMMeleB9VSDxj37gS79kKimfs7bTiXV9h8YytihMoLh44TYOYc9NehTbgbODXRs3ojGnb+yUSTyLTW7SRErEeBQKgA5iu4axZaqcCd2j0OykfAitsKrSsBEPrL+BVYGkLgq9t4XwP2Jxgl+firdNh1SpftHDOQ0nPda/n4r2cQjhDf4vnfi5J4T6Hpt51IB4pBDwRfW4EkYLvA85yVEnXyG3lQQ/q8UTcH32ert3iUIQ0PfCgPtkncYXH4g06FC+tgGIrTUHhIfy440q65A3H5R1N+f1HzQ/hG+JtKQvNkj7LsiX0djmwSJ3nMe05qJOdNua3UlNP9psPejwevkctF8Yf03BU1vV6hNAQvivlFcmSYZ11JEHWpV8DFuZQr6vDv3zrcQ8csGjUxhzrNSQBl0AXiS50f4GcMWpR0Dk51kumkt0iYHczv6ZmSnqC6FguOXnnBS4PNDu0pjUWBerP1LTGglrAdMwNcvKZ0jDf4rt5p6x1deoaQZEM62yjo0EdxDvYblG3zZrf0uxhYj7vnmI9KCknyXEjBTvKy3K+eHN024SLuo8EBW11CJN0muaKeRpscEKgV6NI0u4TseUCh2UdD3TxvEpc5rCtxwLdPlUlznPY1sOBruRXCZd+70ER8PeKCegyA3WvCPidwwJ9R1yYixzWcU+gSTlFkuctZIZxfh2xtVO3iv7bZCaQB0t1y2qjmGSH+olJH3SL1cdrNBM5bpthlYDN5pCiM+9HY/5mM0KGYsoZc1xn2fTdaRaVPnd8ZWyJ6/2zLcqKW71zPeOSDLFRI+Anjgt3yRGLsmyOTYskdY4va/ZX0J1Ji+xcmJDa0V/KZhTDBg3DTRCwsF2LJWSNqXJYwI36NK6JR9yhzxoJKLxUizclLwJ/Njtoum62K9InTOMH5pEcP2EPXbQHSvd82un1ai/kOXE4SYv21T1wkv3TaB4d7YGG+yvRn+zotV3+WF/3wHHb0eyEzXqgcKdGaWrgnlYEHKmH8v/0xvXAJKyp8BBel1p+ZUsFBdyd5IRxQzjMdRVb/hSXZXmSA5MKKGH1K222fJacFbrp0pmAaA+8qs3jhuJ1XGuCpUmwEVD4UXOqh5xXvXiOaM/blEdN5F0KX7XRQ2RnzlskxsnDxclawLUu091aYXUGS4Z5CdhbpHBhluiOyrII+CVwTfay2POwvofPVwEP+NTrmiFR7ed1a7wvAkoY6hXgtHylSIfkIj8F/JSjgIOR70r27Qsl2MoRS6fuR/5Yk4iyEjAIfadPI0lt996vhXqffMsioSnpUutMLfvijNswgaK3OEiyo8yx5f0GkpomLwST+5QkFJ2i91OZVsl/gPAP4D9Y7bQo+fwp1wAAAABJRU5ErkJggg==" />
+          </svg>
+
+          <a href="" class="credential__media">UkrainianMystery</a>
+        </div>
+      </ul>
+    </nav>
+  </header>
 
     <section class="about-us">
       <h1 class="title">ПРО НАС</h1>

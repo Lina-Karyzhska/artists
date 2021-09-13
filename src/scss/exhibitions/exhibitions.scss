@@ -1,6 +1,6 @@
 .exhibitions {
   &_preview {
-    background-image: url("../images/exhibitions.png");
+    background-image: url('../images/exhibitions.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,16 +14,6 @@
       .poster {
         z-index: 0;
       }
-    }
-  }
-
-  &__title {
-    width: 60%;
-    margin: auto;
-
-    @media (max-width: 800px) {
-      width: 100%;
-      text-align: center;
     }
   }
 
@@ -46,7 +36,7 @@
   }
 
   &__info {
-    font-family: "Playfair Display Italic", serif;
+    font-family: 'Playfair Display Italic', serif;
     text-align: center;
     font-size: 0.83rem;
   }
