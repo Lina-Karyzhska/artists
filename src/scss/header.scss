@@ -4,18 +4,48 @@
   z-index: 9;
   margin-bottom: -5px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  background-image: url("../images/header.png");
+  background-image: url('../images/header.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 2vw;
+
+  &__svg {
+    width: 1.5vw;
+    height: 1.5vw;
+  }
 
   &__logo {
-    width: 12vw;
-    height: 12vw;
     display: block;
+    width: 17vw;
+    height: 17vw;
     margin: auto;
     margin-bottom: 1vw;
+
+    position: relative;
+    left: -11vw;
+
+    @media (max-width: 800px) {
+      left: 0;
+    }
+  }
+
+  &__triangle {
+    width: 70%;
+    padding-top: 4vw;
+    padding-bottom: 6vw;
+    margin-bottom: 2vw;
+
+    background-color: #fff;
+    clip-path: polygon(0 0, 100% 0, 35% 100%, 0 40%);
+
+    @media (max-width: 800px) {
+      width: 100%;
+      padding-top: 0vw;
+      padding-bottom: 0;
+      margin-bottom: 0vw;
+
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
   }
 }
 
@@ -54,8 +84,6 @@
         margin: 0 auto;
       }
     }
-
-
   }
 
   &__item {
@@ -64,7 +92,7 @@
 
   &__link {
     color: #fff;
-    font-family: "Neris Light", arial;
+    font-family: 'Neris Light', arial;
     opacity: 0.6;
     letter-spacing: 2px;
     white-space: nowrap;
@@ -180,7 +208,7 @@
 
     &::before,
     &::after {
-      content: "";
+      content: '';
     }
 
     &::before {

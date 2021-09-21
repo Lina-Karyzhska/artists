@@ -10,6 +10,10 @@
   &__info.card__info {
     padding-top: 1vw;
     padding-bottom: 3vw;
+
+    @media (max-width: 420px) {
+      padding-bottom: 25px;
+    }
   }
 
   &__item {
