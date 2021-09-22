@@ -148,6 +148,7 @@
 
   &__wrapper {
     display: none;
+    text-align: center;
 
     &_show {
       display: block;
@@ -196,11 +197,18 @@
 
   &__pagination {
     background-color: #050708;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: #fff;
     padding: 1vw 0;
+
+    & .gallery__preview__btn {
+      margin: 2em;
+    }
+
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
     &_num {
       font-family: 'Neris SemiBold', arial;

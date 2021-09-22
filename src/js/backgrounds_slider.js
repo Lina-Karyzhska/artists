@@ -1,3 +1,8 @@
+const toggleGallery = () => {
+    $('.gallery__wrapper').toggle("d-none");
+    $('#gallery__preview__btn').toggle("d-none");
+}
+
 $(function() {
     $(".slider").slick({
         lazyLoad: 'ondemand',
@@ -42,11 +47,8 @@ $(function() {
         ],
     });
 
-    $('#gallery__preview__btn').on('click', () => {
-        if (!$('.gallery__wrapper').hasClass(".gallery__wrapper_hide")) {
-            $('.gallery__wrapper').addClass("gallery__wrapper_show")
-        }
-    })
+    $('#gallery__preview__btn').on('click', toggleGallery);
+    $('#gallery__preview__btn_less').on('click', toggleGallery);
 
     $(".projects__scroll").mCustomScrollbar({
 		scrollButtons: {
