@@ -16,8 +16,9 @@
 
   &__logo {
     display: block;
-    width: 17vw;
-    height: 17vw;
+    width: 14vw;
+    height: 14vw;
+    object-fit: contain;
     margin: auto;
     margin-bottom: 1vw;
 
@@ -31,12 +32,12 @@
 
   &__triangle {
     width: 70%;
-    padding-top: 4vw;
-    padding-bottom: 6vw;
-    margin-bottom: 2vw;
-
     background-color: #fff;
     clip-path: polygon(0 0, 100% 0, 35% 100%, 0 40%);
+
+    padding-top: 1vw;
+    padding-bottom: 1rem;
+    margin-bottom: -2rem;
 
     @media (max-width: 800px) {
       width: 100%;

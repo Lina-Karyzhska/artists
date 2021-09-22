@@ -3,6 +3,8 @@
   display: flex;
   padding-bottom: 15px;
   margin: auto;
+  z-index: 2;
+  position: relative;
 
   &__list {
     width: 100%;
@@ -74,7 +76,7 @@
       &:active {
         background-color: #dd000a;
 
-        > a {
+        >a {
           color: #fff;
         }
       }
