@@ -5,13 +5,14 @@
   justify-content: space-between;
   align-items: flex-start;
   height: calc(100vh - 15vw - 10rem - 15px);
-  min-height: 40rem;
+  min-height: 39rem;
+  max-height: 65vw;
 
   .slider,
   .slick-list,
   .slick-track,
   .slick-slide,
-  .slick-slide > div {
+  .slick-slide>div {
     height: 100%;
   }
 
@@ -49,6 +50,7 @@
 
   &__text {
     font-size: 1.16rem;
+    line-height: 1.5;
     height: 50%;
     width: 80%;
     overflow-y: auto;
@@ -127,6 +129,10 @@
   &__text {
     font-size: 1rem;
     line-height: 1;
+
+    @media (max-width: 800px) {
+      line-height: 1.5;
+    }
   }
 
   &__tags {

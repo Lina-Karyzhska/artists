@@ -101,7 +101,7 @@
     input {
       display: none;
 
-      &:checked + label {
+      &:checked+label {
         border-color: #ff0000;
 
         span {
@@ -188,7 +188,7 @@
       input {
         display: none;
 
-        &:checked + label {
+        &:checked+label {
           border-color: #ff0000;
         }
       }
@@ -235,6 +235,7 @@
   &__slider {
     margin-bottom: -4.5vw;
   }
+
   &__title {
     color: #fff;
     background-color: #282828;
@@ -252,7 +253,7 @@
   }
 
   &__capture {
-    height: 35vw;
+    height: 27rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -283,6 +284,7 @@
     height: 80%;
     width: 60%;
     font-size: 1rem;
+    line-height: 1.5;
   }
 
   .mCSB_scrollTools {
