@@ -125,7 +125,11 @@ button {
   font-size: 3em;
 
   @media (max-width: 800px) {
-    font-size: 4em;
+    font-size: 4.7em;
+  }
+
+  @media (max-width: 420px) {
+    font-size: 6em;
   }
 }
 

@@ -27,7 +27,8 @@
     background-color: #f1f0f0;
     text-align: center;
     text-transform: uppercase;
-    padding-bottom: 4vw;
+    // padding-bottom: 4vw;
+    padding-bottom: 1.8rem;
     position: relative;
     height: 50%;
   }
@@ -46,7 +47,8 @@
 
   &__link {
     position: absolute;
-    bottom: -1.3vw;
+    // bottom: -1.3vw;
+    bottom: -0.9rem;
     left: 50%;
     transform: translateX(-50%);
   }
