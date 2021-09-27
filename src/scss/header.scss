@@ -5,7 +5,7 @@
   margin-bottom: -5px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   background-image: url('../images/header.jpg');
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -26,7 +26,7 @@
     left: -11vw;
 
     @media (max-width: 800px) {
-      left: 0;
+      // left: 0;
     }
   }
 
@@ -44,8 +44,7 @@
       padding-top: 0vw;
       padding-bottom: 0;
       margin-bottom: 0vw;
-
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 40% 100%, 0 40%);
     }
   }
 }
@@ -139,12 +138,11 @@
   .header {
     display: flex;
     align-items: center;
-    background-image: none;
-    padding: 1.66vw 10% 0.77vw;
+    // padding: 1.66vw 10% 0.77vw;
     margin-bottom: 0;
 
     &__logo {
-      width: 24.16vw;
+      width: 23.16vw;
       height: 24.72vw;
     }
   }
@@ -156,6 +154,7 @@
     width: 9vw;
     height: 5.83vw;
     cursor: pointer;
+    margin-left: 10%;
 
     &__logo,
     &__credentials-text,
