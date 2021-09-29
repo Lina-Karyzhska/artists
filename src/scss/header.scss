@@ -5,9 +5,13 @@
   margin-bottom: -5px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   background-image: url('../images/header.jpg');
-  background-position: center top;
+  background-position: center 25%;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (max-width: 800px) {
+    background-position: center 0%;
+  }
 
   &__svg {
     width: 1.5vw;
@@ -43,7 +47,7 @@
       padding-top: 0vw;
       padding-bottom: 0;
       margin-bottom: 0vw;
-      clip-path: polygon(0 0, 100% 0, 40% 100%, 0 40%);
+      clip-path: polygon(0 0, 87% 0, 37% 95%, 0 23%);
     }
   }
 }
@@ -141,8 +145,9 @@
     margin-bottom: 0;
 
     &__logo {
-      width: 20.16vw;
-      height: 24.72vw;
+      width: 15.16vw;
+      height: 20.72vw;
+      left: -13.5vw;
     }
   }
 
