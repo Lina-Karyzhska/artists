@@ -60,4 +60,26 @@ $(function() {
 		theme: "rounded-dark",
         scrollInertia:400
 	});
+
+    $(".gallery__preview").slick({
+		lazyLoad: 'ondemand',
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 800,
+                settings: {
+                  slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 420,
+                settings: {
+                  slidesToShow: 1,
+                }
+            }
+        ],
+	});
 })
